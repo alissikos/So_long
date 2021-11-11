@@ -21,6 +21,7 @@ int	main(int argc, char **argv)
 		game = (t_data *)malloc(sizeof(t_data));
 		if (!game)
 			return (-1);
-		check_data(argv[1]);
+		ft_check_data(argv[1]);
+		
 	}
 }

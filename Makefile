@@ -3,7 +3,7 @@ NAME =	so_long
 #NAME_BONUS = checker
 LIBMLX_DIR = ./mlx/
 
-SRC	=		init.c.c			\
+SRC	=		init.c			\
 			map_checks.c	\
 			so_long.c
 
@@ -39,10 +39,10 @@ all :	$(NAME) $(LIBMLX)
 	$(CC) $(FLAGS) -c $< -o $@
 
 $(NAME): $(OBJ) $(LIBMLX)
-	@$(CC) $(FLAGS) $(OBJ) -o $(NAME)
+	@$(CC) $(FLAGS) $(OBJ) -o $(NAME) $(LDFLAGS)
 
 $(NAME_BONUS): $(OBJ_BONUS) $(LIBMLX)
-	@$(CC) $(FLAGS) $(OBJ_BONUS) -o $(NAME_BONUS)
+	@$(CC) $(FLAGS) $(OBJ_BONUS) -o $(NAME_BONUS) $(LDFLAGS)
 
 bonus: $(NAME_BONUS) $(LIBMLX)
 

@@ -96,5 +96,5 @@ void 	ft_check_data(char *file)
 {
 	ft_check_map(file);
 	ft_map_name(file);
-	ft_map_character(file);
+	ft_map_chars_check(file);
 }

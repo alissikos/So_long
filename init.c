@@ -12,7 +12,34 @@
 
 #include "so_long.h"
 
-void init_window(t_data **game)
+t_data	*init_game(t_data *game)
+{
+	game->array = NULL;
+	game->wall = NULL;
+	game->player_left = NULL;
+	game->player_right = NULL;
+	game->collectible = NULL;
+	game->empty_space = NULL;
+	game->exit_closed = NULL;
+	game->exit_open = NULL;
+	game->height = 0;
+	game->width = 0;
+	game->x_player = 0;
+	game->y_player = 0;
+	game->num_of_cakes = 0;
+	
+}
+
+void	init_array(char *file, t_data **game)
+{
+	(*game)->height = get_height(file);
+	(*game)->width = get_width(file);
+	(*game)->array = malloc(sizeof(char *) * ((*game)->height));
+	if (!((*game)->array))
+		exit (EXIT_FAILURE);
+}
+
+void	init_window(t_data **game)
 {
 	(*game)->mlx_ptr = mlx_init();
 	(*game)->win_ptr = mlx_new_window((*game)->mlx_ptr,
