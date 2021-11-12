@@ -27,7 +27,14 @@ t_data	*init_game(t_data *game)
 	game->x_player = 0;
 	game->y_player = 0;
 	game->num_of_cakes = 0;
-	
+	game->score = 0;
+	game->assets = 0;
+	game->step = 0; // check if it's just counting checks or for game over
+	game->prev_step = 0;
+	game->out = 0;
+	game->end = 0;
+	game->counter = 0;
+	return (game);
 }
 
 void	init_array(char *file, t_data **game)

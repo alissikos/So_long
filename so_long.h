@@ -35,7 +35,13 @@ typedef struct s_data
 	int		x_player;
 	int		y_player;
 	int		num_of_cakes;
-
+	int		score;
+	char	*assets;
+	int		step;
+	int		prev_step;
+	int		out;
+	int		end;
+	int		counter;
 }			t_data;
 
 char	*check_rest(char *rest, char **line);

@@ -14,5 +14,26 @@
 
 void	ft_error(int check)
 {
-
+	if (check == 1)
+		printf("Error: %s\n", "The map description file must "
+			"be with the .ber extension.");
+	else if (check == 2)
+		printf("Error: %s\n", "The map must contain only '01CEP' characters.");
+	else if (check == 3)
+		printf("Error: %s\n", "The map must be surrounded by walls.");
+	else if (check == 4)
+		printf("Error: %s\n", "The map must have at least one exit.");
+	else if (check == 5)
+		printf("Error: %s\n", "The map must have at least one collectible.");
+	else if (check == 6)
+		printf("Error: %s\n", "The map must have at least "
+			"one player (starting position).");
+	else if (check == 7)
+		printf("Error: %s\n", "The map must be rectangular.");
+	else if (check == 8)
+		printf("Error: %s\n", "To start game you must pass program "
+			"name and the map file name.");
+	else if (check == 9)
+		printf("Error: %s\n", "File reading error.");
+	exit(EXIT_FAILURE);
 }
