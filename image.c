@@ -12,21 +12,10 @@
 
 #include "so_long.h"
 
-int	main(int argc, char **argv)
+void ft_set_pic(t_data **game)
 {
-	t_data	*game;
+	int	img_width;
+	int	img_height;
 
-	if (argc == 2)
-	{
-		game = (t_data *)malloc(sizeof(t_data));
-		if (!game)
-			return (-1);
-		ft_check_data(argv[1]);
-		ft_init_game(game);
-		if (!ft_reading_map(argv[1], &game);
-			ft_error(9);
-		ft_game();
-		
-		
-	}
+	(*game)->wall = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
 }

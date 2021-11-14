@@ -22,7 +22,7 @@ size_t	ft_get_height(char *file)
 	fd = open(file, O_RDONLY);
 	if (fd < 0)
 		exit (EXIT_FAILURE);
-	while (get_next_line(fd, &line))
+	while (get_next_line(&line, fd))
 	{
 		if (line)
 			free(line);
@@ -44,7 +44,7 @@ size_t	ft_get_width(char *file)
 	fd = open(file, O_RDONLY);
 	if (fd < 0)
 		exit (EXIT_FAILURE);
-	while (get_next_line(fd, &line))
+	while (get_next_line(&line, fd))
 	{
 		width = ft_strlen(line);
 		if (line)
@@ -68,7 +68,7 @@ void	ft_check_map(char *file) //проверка на прямоугольнос
 	fd = open(file, O_RDONLY);
 	if (fd < 0)
 		exit (EXIT_FAILURE);
-	while (get_next_line(fd, &line))
+	while (get_next_line(&line, fd))
 	{
 		width = ft_strlen(line);
 		if (line)

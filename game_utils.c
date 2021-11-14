@@ -12,32 +12,60 @@
 
 #include "so_long.h"
 
-int	ft_reading_map(char *file, t_data **game)
+void	ft_count_collectibles(t_data **game)
 {
-	int		fd;
-	int		line;
-	char	*line_buf;
+	int	line;
+	int	columns;
 
 	line = 0;
-	line_buf = NULL;
-	fd = open(file, 0_RDONLY);
-	if (fd < 0)
-		return (0);
-	init_array(file, game);
-	while (get_next_line(&line_buf, fd))
+	while (line < (*game)->height)
 	{
-		if (line_buf)
+		columns = 0;
+		while (columns < (*game)->width)
 		{
-			(*game)->array[line] = ft_strdup(line_buf);
-			free(line_buf);
-			line++;
+			if ((*game)->array[line][columns] == 'C')
+				(*game)->num_of_collectibles += 1;
+			columns++;
 		}
+		line++;
 	}
-	if (line_buf)
-		free(line_buf);
-	close (fd);
-	ft_wall_check((*game));
-	return (1);
+	if ((*game)->num_of_collectibles == 0)
+		ft_error(5);
 }
 
+void	ft_get_p_position(t_data **game)
+{
+	int	line;
+	int	columns;
+	int	check;
 
+	line = 0;
+	check = 0;
+	while (line < (*game)->height)
+	{
+		columns = 0;
+		while (columns < (*game)->width)
+		{
+			if ((*game)->array[line][columns] == 'P' && check == 0)
+			{
+				(*game)->x_player = columns;
+				(*game)->y_player = line;
+				check = 1;
+			}
+			else if ((*game)->array[line][columns] == 'P' && check == 1)
+				ft_error(6);
+			columns++;
+		}
+		line++;
+	}
+	if ((*game)->x_player == 0)
+		ft_error(6);
+}
+
+void	ft_game(t_data **game)
+{
+	ft_count_collectibles(game);
+	ft_init_window(game);
+	ft_get_p_position(game);
+	ft_
+}

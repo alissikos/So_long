@@ -12,7 +12,7 @@
 
 #include "so_long.h"
 
-t_data	*init_game(t_data *game)
+t_data	*ft_init_game(t_data *game)
 {
 	game->array = NULL;
 	game->wall = NULL;
@@ -26,7 +26,7 @@ t_data	*init_game(t_data *game)
 	game->width = 0;
 	game->x_player = 0;
 	game->y_player = 0;
-	game->num_of_cakes = 0;
+	game->num_of_collectibles = 0;
 	game->score = 0;
 	game->assets = 0;
 	game->step = 0; // check if it's just counting checks or for game over
@@ -37,7 +37,7 @@ t_data	*init_game(t_data *game)
 	return (game);
 }
 
-void	init_array(char *file, t_data **game)
+void	ft_init_array(char *file, t_data **game)
 {
 	(*game)->height = get_height(file);
 	(*game)->width = get_width(file);
@@ -46,7 +46,7 @@ void	init_array(char *file, t_data **game)
 		exit (EXIT_FAILURE);
 }
 
-void	init_window(t_data **game)
+void	ft_init_window(t_data **game)
 {
 	(*game)->mlx_ptr = mlx_init();
 	(*game)->win_ptr = mlx_new_window((*game)->mlx_ptr,

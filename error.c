@@ -26,8 +26,7 @@ void	ft_error(int check)
 	else if (check == 5)
 		printf("Error: %s\n", "The map must have at least one collectible.");
 	else if (check == 6)
-		printf("Error: %s\n", "The map must have at least "
-			"one player (starting position).");
+		printf("Error: %s\n", "The map must have one player.");
 	else if (check == 7)
 		printf("Error: %s\n", "The map must be rectangular.");
 	else if (check == 8)
