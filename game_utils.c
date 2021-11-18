@@ -67,5 +67,8 @@ void	ft_game(t_data **game)
 	ft_count_collectibles(game);
 	ft_init_window(game);
 	ft_get_p_position(game);
-	ft_
+	ft_xpm_to_image(game);
+	ft_draw_map // переписать
+	
+	
 }

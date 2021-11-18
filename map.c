@@ -39,5 +39,3 @@ int	ft_reading_map(char *file, t_data **game)
 	ft_wall_check((*game));
 	return (1);
 }
-
-

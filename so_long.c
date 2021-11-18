@@ -22,7 +22,7 @@ int	main(int argc, char **argv)
 		if (!game)
 			return (-1);
 		ft_check_data(argv[1]);
-		ft_init_game(game);
+		ft_init_struct(game);
 		if (!ft_reading_map(argv[1], &game);
 			ft_error(9);
 		ft_game();

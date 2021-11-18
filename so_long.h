@@ -54,7 +54,7 @@ int		ft_strlen(const char *str);
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
 char	*ft_strdup(const char *str);
 
-t_data	*ft_init_game(t_data *game);
+t_data	*ft_init_struct(t_data *game);
 void	ft_init_array(char *file, t_data **game);
 void	ft_init_window(t_data **game);
 
@@ -78,6 +78,9 @@ void	ft_error(int check);
 //map.c
 int	ft_reading_map(char *file, t_data **game);
 
+//image.c
+void	ft_xpm_to_image(t_data **game);
+void	ft_image_to_window(t_data **game, int index, int i, int j);
 
 
 

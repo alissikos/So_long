@@ -12,10 +12,59 @@
 
 #include "so_long.h"
 
-void ft_set_pic(t_data **game)
+void	ft_init_window(t_data **game)
+{
+	(*game)->mlx_ptr = mlx_init();
+	(*game)->win_ptr = mlx_new_window((*game)->mlx_ptr,
+									  (*game)->width * PIC_SIDE, (*game)->height * PIC_SIDE, "SO LONG");
+}
+
+void ft_xpm_to_image(t_data **game)
 {
 	int	img_width;
 	int	img_height;
 
 	(*game)->wall = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
+	(*game)->player_left = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
+	(*game)->player_right = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
+	(*game)->collectible = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
+	(*game)->empty_space = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
+	(*game)->exit_closed = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
+	(*game)->exit_open = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
+}
+
+void ft_image_to_window(t_data **game, char ch, int i, int j) // заменить индекс на ч
+{
+	if (ch == '0')
+		mlx_put_image_to_window(((*game)->mlx_ptr, (*game)->win_ptr, (*game)->empty_space, i, j));
+	if (ch == '1')
+		mlx_put_image_to_window(((*game)->mlx_ptr, (*game)->win_ptr, (*game)->wall, i, j));
+	if (ch == 'C')
+		mlx_put_image_to_window(((*game)->mlx_ptr, (*game)->win_ptr, (*game)->collectible, i, j));
+	if (ch == 'P')
+		mlx_put_image_to_window(((*game)->mlx_ptr, (*game)->win_ptr, (*game)->player_left, i, j));
+	if (ch == 'E')
+	{
+		if ((*game)->num_of_collectibles > 0)
+			mlx_put_image_to_window(((*game)->mlx_ptr, (*game)->win_ptr, (*game)->exit_closed, i, j));
+		else
+			mlx_put_image_to_window(((*game)->mlx_ptr, (*game)->win_ptr, (*game)->exit_open, i, j));
+	}
+}
+
+void ft_draw_map(t_data **game)
+{
+	int line;
+	int columns;
+	int index;
+	
+	line = 0;
+	while (line < (*game)->height * PIC_SIDE)
+	{
+		columns = 0;
+		while (columns < (*game)->width * PIC_SIDE)
+		{
+			if
+		}
+	}
 }

@@ -12,38 +12,12 @@
 
 #include "so_long.h"
 
-t_data	*ft_init_struct(t_data *game)
+int	ft_print_steps(int key, t_data *game) // or print steps right in the functions
 {
-	game->array = NULL;
-	game->wall = NULL;
-	game->player_left = NULL;
-	game->player_right = NULL;
-	game->collectible = NULL;
-	game->empty_space = NULL;
-	game->exit_closed = NULL;
-	game->exit_open = NULL;
-	game->assets = "01CPE\0";
-	game->height = 0;
-	game->width = 0;
-	game->x_player = 0;
-	game->y_player = 0;
-	game->num_of_collectibles = 0;
-	game->score = 0;
-	game->step = 0; // check if it's just counting checks or for game over
-	game->prev_step = 0;
-	game->out = 0;
-	game->end = 0;
-	game->counter = 0;
-	return (game);
+	if (key == )
 }
 
-void	ft_init_array(char *file, t_data **game)
+int ft_key(int key, t_data **game)
 {
-	(*game)->height = get_height(file);
-	(*game)->width = get_width(file);
-	(*game)->array = malloc(sizeof(char *) * ((*game)->height));
-	if (!((*game)->array))
-		exit (EXIT_FAILURE);
+	if (key == )
 }
-
-
