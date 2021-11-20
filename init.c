@@ -45,5 +45,3 @@ void	ft_init_array(char *file, t_data **game)
 	if (!((*game)->array))
 		exit (EXIT_FAILURE);
 }
-
-

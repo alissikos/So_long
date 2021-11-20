@@ -33,7 +33,7 @@ void ft_xpm_to_image(t_data **game)
 	(*game)->exit_open = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
 }
 
-void ft_image_to_window(t_data **game, char ch, int i, int j) // заменить индекс на ч
+void ft_image_to_window(t_data **game, char ch, int i, int j)
 {
 	if (ch == '0')
 		mlx_put_image_to_window(((*game)->mlx_ptr, (*game)->win_ptr, (*game)->empty_space, i, j));
@@ -56,15 +56,18 @@ void ft_draw_map(t_data **game)
 {
 	int line;
 	int columns;
-	int index;
+	char ch;
 	
 	line = 0;
-	while (line < (*game)->height * PIC_SIDE)
+	while (line < (*game)->height * PIC_SIDE) // pic_side - можно написать сторону квадрата картинки
 	{
 		columns = 0;
-		while (columns < (*game)->width * PIC_SIDE)
+		while (columns < (*game)->width * PIC_SIDE) // в карте, например, 7*7 и размер картинки 100*100, тогда окно 700*700
 		{
-			if
+			ch = (*game)->array[line / PIC_SIDE][columns / PIC_SIDE]; //
+			ft_image_to_window(game, ch, columns, line);
+			columns += PIC_SIDE;
 		}
+		line += PIC_SIDE;
 	}
 }

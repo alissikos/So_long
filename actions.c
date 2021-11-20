@@ -12,32 +12,24 @@
 
 #include "so_long.h"
 
-//int	ft_print_steps(int key, t_data *game) // or print steps right in the functions
-//{
-//
-//}
-
-
-
-void	ft_key(int key, t_data **game)
+void	ft_move_up(int key, t_data **game)
 {
-	if ((key == 13 || key == 126) && !(*game)->end)
-		ft_move_up();
-	if ((key == 1 || key == 125) && !(*game)->end)
-		ft_move_down();
-	if ((key == 0 || key == 123) && !(*game)->end)
-		ft_move_left();
-	if ((key == 2 || key == 124) && !(*game)->end)
-		ft_move_right();
-	if (key == 53)
-		ft_escape(key, game);
-	ft_draw_map(game);
-}
+	int	x;
+	int	y;
 
-void	ft_key_actions(t_data **game)
-{
-	mlx_hook((*game)->win_ptr, 2, 0, ft_key, game);
-	mlx_key_hook((*game)->win_ptr, key_hook, *game);
-	mlx_loop_hook((*game)->mlx_ptr, put_game_end, game);
-	mlx_hook((*game)->win_ptr, 17, 0, ft_close, game);
+	x = (*game)->x_player;
+	y = (*game)->y_player;
+	if (!(*game)->out)
+	{
+		(*game)->prev_step = (*game)->step;
+		if (if_can_move(game, x, y - 1)) // why -1
+		{
+			(*game)->out = if_win(game, x, y - 1);
+			ft_check_score(game, x, y + 1); // why +1
+			(*game)->y_player += 1;
+			ft_change_map(game, '0', x, y);
+			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
+		}
+	}
+	printf("Step:%d\n", (*game)->steps++);
 }

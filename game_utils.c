@@ -68,7 +68,9 @@ void	ft_game(t_data **game)
 	ft_init_window(game);
 	ft_get_p_position(game);
 	ft_xpm_to_image(game);
-	ft_draw_map // переписать
+	ft_draw_map(game);// переписать
+	ft_key_actions(game);
+	
 	
 	
 }
