@@ -70,7 +70,5 @@ void	ft_game(t_data **game)
 	ft_xpm_to_image(game);
 	ft_draw_map(game);// переписать
 	ft_key_actions(game);
-	
-	
-	
+	mlx_loop((*game)->mlx_ptr);
 }

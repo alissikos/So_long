@@ -27,9 +27,11 @@ t_data	*ft_init_struct(t_data *game)
 	game->width = 0;
 	game->x_player = 0;
 	game->y_player = 0;
+	game->flag_player = 0;
 	game->num_of_collectibles = 0;
 	game->score = 0;
 	game->step = 0; // check if it's just counting checks or for game over
+	game->steps = 0;
 	game->prev_step = 0;
 	game->out = 0;
 	game->end = 0;

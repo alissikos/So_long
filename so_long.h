@@ -34,10 +34,12 @@ typedef struct s_data
 	int		height;
 	int		x_player;
 	int		y_player;
+	int		flag_player;
 	int		num_of_collectibles;
 	int		score;
 	char	*assets;
 	int		step;
+	int		steps;
 	int		prev_step;
 	int		out;
 	int		end;
@@ -55,9 +57,9 @@ int		ft_strlen(const char *str);
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
 char	*ft_strdup(const char *str);
 
+//init.c
 t_data	*ft_init_struct(t_data *game);
 void	ft_init_array(char *file, t_data **game);
-void	ft_init_window(t_data **game);
 
 //map_checks.c
 size_t	ft_get_height(char *file);
@@ -80,17 +82,30 @@ void	ft_error(int check);
 int	ft_reading_map(char *file, t_data **game);
 
 //image.c
+void	ft_init_window(t_data **game);
 void	ft_xpm_to_image(t_data **game);
-void	ft_image_to_window(t_data **game, int index, int i, int j);
 void	ft_image_to_window(t_data **game, char ch, int i, int j);
-		void	ft_draw_map(t_data **game);
+void	ft_draw_map(t_data **game);
 
+//actions.c
+void	ft_move_up(int key, t_data **game);
+void	ft_move_down(int key, t_data **game);
+void	ft_move_left(int key, t_data **game);
+void	ft_move_right(int key, t_data **game);
 
+//actions_utils.c
+char	get_map_char(t_data **game, int x, int y);
+int	if_can_move(t_data **game, int x, int y);
+void	ft_check_score(t_data **game, int x, int y);
+int	if_win(t_data **game, int x, int y);
 
+//animation.c
+void	ft_key(int key, t_data **game);
+void	ft_key_actions(t_data **game);
 
-
-
-
-
+//game_utils.c
+void	ft_count_collectibles(t_data **game);
+void	ft_get_p_position(t_data **game);
+void	ft_game(t_data **game);
 
 #endif
