@@ -12,23 +12,34 @@
 
 #include "so_long.h"
 
-int	main(int argc, char **argv)
+void	ft_clean_array(t_data *game)
 {
-	t_data	*game;
+	int	i;
 
-	if (argc == 2)
+	i = game->height;
+	if (!game->array)
+		return ;
+	while (i >= 0)
 	{
-		game = (t_data *)malloc(sizeof(t_data));
-		if (!game)
-			return (-1);
-		ft_check_data(argv[1]);
-		ft_init_struct(game);
-		if (!ft_reading_map(argv[1], &game);
-			ft_error(9);
-		ft_game(&game);
-		if (game)
-			ft_clean_struct(game);
+		if (game->array[i])
+		{
+			free(game->array[i]); // why [i] and not the whole array
+			game->array = NULL;
+		}
+		i--;
 	}
-	else
-		ft_error(10);
+}
+
+void	ft_clean_struct(t_data *game)
+{
+	if (!game)
+		exit (EXIT_FAILURE);
+	if (game->array)
+		ft_clean_array(game);
+	if (game)
+	{
+		free (game);
+		game = NULL;
+	}
+	exit (EXIT_FAILURE)
 }

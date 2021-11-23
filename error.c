@@ -34,5 +34,7 @@ void	ft_error(int check)
 			"name and the map file name.");
 	else if (check == 9)
 		printf("Error: %s\n", "File reading error.");
+	else if (check == 10)
+		printf("Error: %s\n", "There must be 2 arguments (program name and map file name.");
 	exit(EXIT_FAILURE);
 }

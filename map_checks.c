@@ -74,7 +74,7 @@ void	ft_check_map(char *file) //проверка на прямоугольнос
 		if (line)
 			free(line);
 		if (width != tmp)
-			ft_error();
+			ft_error(7);
 	}
 	if (line)
 		free(line);
@@ -89,10 +89,10 @@ void	ft_map_name(char *file)
 	len = ft_strlen(file);
 	dot = (const char *)&file[len - 4];
 	if (ft_strncmp(dot, ".ber", 4) != 0)
-		ft_error();
+		ft_error(1);
 }
 
-void 	ft_check_data(char *file)
+void	ft_check_data(char *file)
 {
 	ft_check_map(file);
 	ft_map_name(file);

@@ -29,8 +29,8 @@ static void	ft_line_check(char *line)
 	len = ft_strlen(line);
 	while (index < 0)
 	{
-		if (ft_chars(line[index]) == 0)
-			ft_error();
+		if (ft_chars(line[index]) == 0) // проверить эту строчку, думаю, что нужно переписать на чар
+			ft_error(4); // проверить код ошибки
 		index++;
 	}
 }
@@ -63,7 +63,7 @@ void	ft_map_chars_check(char *file)
 	if (fd < 0)
 		exit(EXIT_FAILURE);
 //	rd = 1;
-	while (get_next_line(fd, &line))
+	while (get_next_line(&line, fd))
 	{
 		ft_check_line(line);
 		if (ft_check_exit(line))

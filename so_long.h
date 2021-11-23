@@ -17,6 +17,7 @@
 # include "./mlx/mlx.h"
 # include <stdlib.h>
 # include <unistd.h>
+# include <fcntl.h>
 
 typedef struct s_data
 {
@@ -107,5 +108,9 @@ void	ft_key_actions(t_data **game);
 void	ft_count_collectibles(t_data **game);
 void	ft_get_p_position(t_data **game);
 void	ft_game(t_data **game);
+
+//clean.c
+void	ft_clean_array(t_data *game);
+void	ft_clean_struct(t_data *game);
 
 #endif

@@ -25,8 +25,8 @@ void ft_xpm_to_image(t_data **game)
 	int	img_height;
 
 	(*game)->wall = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
-	(*game)->player_left = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
-	(*game)->player_right = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
+	(*game)->player_left = mlx_xpm_file_to_image(((*game)->mlx_ptr, ./assets/00.png, &img_width, &img_height));
+	(*game)->player_right = mlx_xpm_file_to_image(((*game)->mlx_ptr, ./assets/00_r.png, &img_width, &img_height));
 	(*game)->collectible = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
 	(*game)->empty_space = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
 	(*game)->exit_closed = mlx_xpm_file_to_image(((*game)->mlx_ptr, *путь к картинке*, &img_width, &img_height));
