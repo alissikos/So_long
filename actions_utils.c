@@ -32,6 +32,11 @@ int	if_can_move(t_data **game, int x, int y)
 	return (1);
 }
 
+void	ft_change_map(t_data **game, char ch, int x, int y)
+{
+	(*game)->array[y][x] = ch;
+}
+
 void	ft_check_score(t_data **game, int x, int y)
 {
 	if (get_map_char(game, x, y) == 'C')

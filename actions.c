@@ -81,7 +81,7 @@ void	ft_move_right(int key, t_data **game)
 {
 	int	x;
 	int	y;
-	
+
 	x = (*game)->x_player;
 	y = (*game)->y_player;
 	if (!(*game)->out)

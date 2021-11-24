@@ -101,7 +101,8 @@ void	ft_check_score(t_data **game, int x, int y);
 int	if_win(t_data **game, int x, int y);
 
 //animation.c
-void	ft_key(int key, t_data **game);
+void	ft_escape(int key, t_data **game);
+int		ft_key(int key, t_data **game);
 void	ft_key_actions(t_data **game);
 
 //game_utils.c
@@ -112,5 +113,9 @@ void	ft_game(t_data **game);
 //clean.c
 void	ft_clean_array(t_data *game);
 void	ft_clean_struct(t_data *game);
+
+//game_end.c
+int		ft_close(t_data **game);
+int		ft_game_end(t_data **game);
 
 #endif

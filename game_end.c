@@ -12,24 +12,34 @@
 
 #include "so_long.h"
 
-int	main(int argc, char **argv)
+int	ft_close(t_data **game)
 {
-	t_data	*game;
+	mlx_destroy_window((*game)->mlx_ptr, (*game)->win_ptr);
+	exit (EXIT_SUCCESS);
+	return (0);
+}
 
-	if (argc == 2)
+int	ft_game_end(t_data **game)
+{
+	int	i;
+	int	j;
+
+	i = (*game)->width / 2 * PIC_SIDE;
+	j = (*game)->width / 2 * PIC_SIDE;
+	if ((*game)->out > 0 && !(*game)->end)
 	{
-		game = (t_data *)malloc(sizeof(t_data));
-		if (!game)
-			return (-1);
-		ft_check_data(argv[1]);
-		ft_init_struct(game);
-		if (!ft_reading_map(argv[1], &game);
-			ft_error(9);
-		ft_game(&game);
-		if (game)
-			ft_clean_struct(game);
+		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
+		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "You win!");
 	}
-	else
-		ft_error(10);
+	else if ((*game)->end == 1)
+	{
+		ft_draw_map(game);
+		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "Game over.");
+	}
+	else if ((*game)->end == 2)
+	{
+		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
+		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "Game over.");
+	}
 	return (0);
 }

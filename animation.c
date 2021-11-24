@@ -12,26 +12,30 @@
 
 #include "so_long.h"
 
-//int	ft_print_steps(int key, t_data *game) // or print steps right in the functions
-//{
-//
-//}
+void	ft_escape(int key, t_data **game)
+{
+	if (key == 53)
+	{
+		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
+		mlx_destroy_window((*game)->mlx_ptr, (*game)->win_ptr);
+		exit(EXIT_SUCCESS);
+	}
+}
 
-
-
-void	ft_key(int key, t_data **game)
+int	ft_key(int key, t_data **game)
 {
 	if ((key == 13 || key == 126) && !(*game)->end)
-		ft_move_up();
+		ft_move_up(key, game);
 	if ((key == 1 || key == 125) && !(*game)->end)
-		ft_move_down();
+		ft_move_down(key, game);
 	if ((key == 0 || key == 123) && !(*game)->end)
-		ft_move_left();
+		ft_move_left(key, game);
 	if ((key == 2 || key == 124) && !(*game)->end)
-		ft_move_right();
+		ft_move_right(key, game);
 	if (key == 53)
 		ft_escape(key, game);
 	ft_draw_map(game);
+	return (0);
 }
 
 void	ft_key_actions(t_data **game)
