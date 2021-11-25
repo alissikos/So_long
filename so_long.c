@@ -21,9 +21,9 @@ int	main(int argc, char **argv)
 		game = (t_data *)malloc(sizeof(t_data));
 		if (!game)
 			return (-1);
-		ft_check_data(argv[1]);
+//		ft_check_data(argv[1]);
 		ft_init_struct(game);
-		if (!ft_reading_map(argv[1], &game);
+		if (!ft_reading_map(argv[1], &game))
 			ft_error(9);
 		ft_game(&game);
 		if (game)

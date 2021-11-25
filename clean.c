@@ -41,5 +41,5 @@ void	ft_clean_struct(t_data *game)
 		free (game);
 		game = NULL;
 	}
-	exit (EXIT_FAILURE)
+	exit (EXIT_FAILURE);
 }

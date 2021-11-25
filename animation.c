@@ -41,7 +41,7 @@ int	ft_key(int key, t_data **game)
 void	ft_key_actions(t_data **game)
 {
 	mlx_hook((*game)->win_ptr, 2, 0, ft_key, game);
-	mlx_key_hook((*game)->win_ptr, key_hook, *game);
-	mlx_loop_hook((*game)->mlx_ptr, put_game_end, game);
+	mlx_key_hook((*game)->win_ptr, ft_key, *game);
+	mlx_loop_hook((*game)->mlx_ptr, ft_game_end, game);
 	mlx_hook((*game)->win_ptr, 17, 0, ft_close, game);
 }

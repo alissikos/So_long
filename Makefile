@@ -3,8 +3,7 @@ NAME =	so_long
 #NAME_BONUS = checker
 LIBMLX_DIR = ./mlx/
 
-SRC	=		map_checks.c	\
-			actions.c		\
+SRC	=		actions.c		\
 			actions_utils.c	\
 			animation.c		\
 			error.c			\
@@ -17,6 +16,7 @@ SRC	=		map_checks.c	\
 			map_checks.c	\
 			map_checks2.c	\
 			clean.c			\
+			game_end.c		\
 			so_long.c
 
 #SRC_BONUS =	checker.c			\
@@ -41,7 +41,7 @@ INCL =	so_long.h
 
 FLAGS = -Wall -Wextra -Werror -g #-fsanitize=address
 
-LDFLAGS		=	-L$(LIBMLX_DIR) -lmlx -lft -framework OpenGL -framework Appkit -O3
+LDFLAGS		=	-L$(LIBMLX_DIR) -lmlx -framework OpenGL -framework Appkit -O3
 
 LIBMLX		=	$(addprefix $(LIBMLX_DIR), libmlx.a)
 

@@ -59,14 +59,14 @@ void	ft_map_chars_check(char *file)
 	int		check;
 
 	check = 0;
-	fd = open(file, 0_RDONLY);
+	fd = open(file, O_RDONLY);
 	if (fd < 0)
 		exit(EXIT_FAILURE);
 //	rd = 1;
 	while (get_next_line(&line, fd))
 	{
-		ft_check_line(line);
-		if (ft_check_exit(line))
+		ft_line_check(line);
+		if (ft_exit_check(line))
 			check += 1;
 		if (line)
 			free(line);
@@ -75,29 +75,29 @@ void	ft_map_chars_check(char *file)
 		free(line);
 	close(fd);
 	if (check == 0)
-		ft_error();
+		ft_error(4);
 }
 
-void	ft_wall_check(t_data *game)
-{
-	int	line;
-	int	columns;
-	int	check;
-
-	line = 0;
-	check = 0;
-	while (line < game->height)
-	{
-		columns = 0;
-		while (columns < game->width)
-		{
-			if ((game->array[line][columns] != '1' && line == 0) ||
-			(game->array[line][columns] != '1' && columns == 0) ||
-			(game->array[line][columns] != '1' && line == game->height - 1) ||
-			(game->array[line][columns] != '1' && columns == game->width - 1))
-				ft_error();
-			columns++;
-		}
-		line++;
-	}
-}
+//void	ft_wall_check(t_data *game)
+//{
+//	int	line;
+//	int	columns;
+////	int	check;
+//
+//	line = 0;
+////	check = 0;
+//	while (line < game->height)
+//	{
+//		columns = 0;
+//		while (columns < game->width)
+//		{
+//			if ((game->array[line][columns] != '1' && line == 0) ||
+//			(game->array[line][columns] != '1' && columns == 0) ||
+//			(game->array[line][columns] != '1' && line == game->height - 1) ||
+//			(game->array[line][columns] != '1' && columns == game->width - 1))
+//				ft_error(3);
+//			columns++;
+//		}
+//		line++;
+//	}
+//}

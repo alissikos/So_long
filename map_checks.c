@@ -92,9 +92,9 @@ void	ft_map_name(char *file)
 		ft_error(1);
 }
 
-void	ft_check_data(char *file)
-{
-	ft_check_map(file);
-	ft_map_name(file);
-	ft_map_chars_check(file);
-}
+//void	ft_check_data(char *file)
+//{
+//	ft_check_map(file);
+//	ft_map_name(file);
+//	ft_map_chars_check(file);
+//}

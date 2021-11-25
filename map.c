@@ -20,10 +20,10 @@ int	ft_reading_map(char *file, t_data **game)
 
 	line = 0;
 	line_buf = NULL;
-	fd = open(file, 0_RDONLY);
+	fd = open(file, O_RDONLY);
 	if (fd < 0)
 		return (0);
-	init_array(file, game);
+	ft_init_array(file, game);
 	while (get_next_line(&line_buf, fd))
 	{
 		if (line_buf)
@@ -36,6 +36,6 @@ int	ft_reading_map(char *file, t_data **game)
 	if (line_buf)
 		free(line_buf);
 	close (fd);
-	ft_wall_check((*game));
+//	ft_wall_check((*game));
 	return (1);
 }

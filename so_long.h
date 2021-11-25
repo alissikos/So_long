@@ -19,6 +19,8 @@
 # include <unistd.h>
 # include <fcntl.h>
 
+# define PIC_SIZE 50
+
 typedef struct s_data
 {
 	void	*mlx_ptr;
@@ -70,9 +72,9 @@ void	ft_map_name(char *file);
 void	ft_check_data(char *file);
 
 //map_checks2.c
-static int		ft_chars(int ch);
-static void		ft_line_check(char *line);
-static int		ft_exit_check(char *line);
+//static int		ft_chars(int ch);
+//static void		ft_line_check(char *line);
+//static int		ft_exit_check(char *line);
 void			ft_map_chars_check(char *file);
 void			ft_wall_check(t_data *game);
 
@@ -95,10 +97,11 @@ void	ft_move_left(int key, t_data **game);
 void	ft_move_right(int key, t_data **game);
 
 //actions_utils.c
+void	ft_change_map(t_data **game, char ch, int x, int y);
 char	get_map_char(t_data **game, int x, int y);
-int	if_can_move(t_data **game, int x, int y);
+int		if_can_move(t_data **game, int x, int y);
 void	ft_check_score(t_data **game, int x, int y);
-int	if_win(t_data **game, int x, int y);
+int		if_win(t_data **game, int x, int y);
 
 //animation.c
 void	ft_escape(int key, t_data **game);

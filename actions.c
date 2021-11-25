@@ -14,6 +14,7 @@
 
 void	ft_move_up(int key, t_data **game)
 {
+	(void) key;
 	int	x;
 	int	y;
 
@@ -36,6 +37,7 @@ void	ft_move_up(int key, t_data **game)
 
 void	ft_move_down(int key, t_data **game)
 {
+	(void) key;
 	int	x;
 	int	y;
 
@@ -44,7 +46,7 @@ void	ft_move_down(int key, t_data **game)
 	if (!(*game)->out)
 	{
 		(*game)->prev_step = (*game)->step;
-		if (if_can_move(game, game, x, y + 1))
+		if (if_can_move(game, x, y + 1))
 		{
 			(*game)->out = if_win(game, x, y + 1);
 			ft_check_score(game, x, y + 1);
@@ -57,6 +59,7 @@ void	ft_move_down(int key, t_data **game)
 
 void	ft_move_left(int key, t_data **game)
 {
+	(void) key;
 	int	x;
 	int	y;
 
@@ -79,6 +82,7 @@ void	ft_move_left(int key, t_data **game)
 
 void	ft_move_right(int key, t_data **game)
 {
+	(void) key;
 	int	x;
 	int	y;
 

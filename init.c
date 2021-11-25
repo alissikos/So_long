@@ -41,8 +41,8 @@ t_data	*ft_init_struct(t_data *game)
 
 void	ft_init_array(char *file, t_data **game)
 {
-	(*game)->height = get_height(file);
-	(*game)->width = get_width(file);
+	(*game)->height = ft_get_height(file);
+	(*game)->width = ft_get_width(file);
 	(*game)->array = malloc(sizeof(char *) * ((*game)->height));
 	if (!((*game)->array))
 		exit (EXIT_FAILURE);
