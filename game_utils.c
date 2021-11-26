@@ -64,9 +64,9 @@ void	ft_get_p_position(t_data **game)
 
 void	ft_game(t_data **game)
 {
-	ft_count_collectibles(game);
+	ft_count_collectibles(game); // подсчет коллектиблс
+	ft_get_p_position(game); // проверка плейера
 	ft_init_window(game);
-	ft_get_p_position(game);
 	ft_xpm_to_image(game);
 	ft_draw_map(game);// переписать
 	ft_key_actions(game);

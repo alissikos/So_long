@@ -12,29 +12,26 @@
 
 #include "so_long.h"
 
-void	ft_escape(int key, t_data **game)
+void	ft_escape(t_data **game)
 {
-	if (key == 53)
-	{
-		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
-		mlx_destroy_window((*game)->mlx_ptr, (*game)->win_ptr);
-		exit(EXIT_SUCCESS);
-	}
+	mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
+	mlx_destroy_window((*game)->mlx_ptr, (*game)->win_ptr);
+	exit(EXIT_SUCCESS);
 }
 
 int	ft_key(int key, t_data **game)
 {
 	if ((key == 13 || key == 126) && !(*game)->end)
-		ft_move_up(key, game);
+		ft_move_up(game);
 	if ((key == 1 || key == 125) && !(*game)->end)
-		ft_move_down(key, game);
+		ft_move_down(game);
 	if ((key == 0 || key == 123) && !(*game)->end)
-		ft_move_left(key, game);
+		ft_move_left(game);
 	if ((key == 2 || key == 124) && !(*game)->end)
-		ft_move_right(key, game);
+		ft_move_right(game);
 	if (key == 53)
-		ft_escape(key, game);
-	ft_draw_map(game);
+		ft_escape(game);
+//	ft_draw_map(game);
 	return (0);
 }
 

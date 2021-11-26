@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/aheidy/so_long/actions.c
+so_long.h
+/Users/aheidy/so_long/so_long.h
+
+/Users/aheidy/so_long/animation.c
+so_long.h
+/Users/aheidy/so_long/so_long.h
+
+/Users/aheidy/so_long/game_utils.c
+so_long.h
+/Users/aheidy/so_long/so_long.h
+
+/Users/aheidy/so_long/image.c
+so_long.h
+/Users/aheidy/so_long/so_long.h
+
+/Users/aheidy/so_long/mlx/mlx.h
+
+/Users/aheidy/so_long/so_long.h
+stdio.h
+-
+./mlx/mlx.h
+/Users/aheidy/so_long/mlx/mlx.h
+stdlib.h
+-
+unistd.h
+-
+fcntl.h
+-
+

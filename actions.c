@@ -12,9 +12,8 @@
 
 #include "so_long.h"
 
-void	ft_move_up(int key, t_data **game)
+void	ft_move_up(t_data **game)
 {
-	(void) key;
 	int	x;
 	int	y;
 
@@ -26,24 +25,24 @@ void	ft_move_up(int key, t_data **game)
 		if (if_can_move(game, x, y - 1))
 		{
 			(*game)->out = if_win(game, x, y - 1);
-			ft_check_score(game, x, y + 1);
+			ft_check_score(game, x, y - 1);
 			(*game)->y_player += 1;
 			ft_change_map(game, '0', x, y);
 			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
 		}
 	}
-	printf("Step:%d\n", (*game)->steps++);
+	printf("Step:%d\n", (*game)->steps++); // написать везде + сравнивать прев степ со степом, только прир азнице печатать (в бонусах не нужно)
+	ft_draw_map(game);
 }
 
-void	ft_move_down(int key, t_data **game)
+void	ft_move_down(t_data **game)
 {
-	(void) key;
 	int	x;
 	int	y;
 
 	x = (*game)->x_player;
 	y = (*game)->y_player;
-	if (!(*game)->out)
+	if (!(*game)->out) // если нельзя  выйти
 	{
 		(*game)->prev_step = (*game)->step;
 		if (if_can_move(game, x, y + 1))
@@ -55,11 +54,11 @@ void	ft_move_down(int key, t_data **game)
 			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
 		}
 	}
+	ft_draw_map(game);
 }
 
-void	ft_move_left(int key, t_data **game)
+void	ft_move_left(t_data **game)
 {
-	(void) key;
 	int	x;
 	int	y;
 
@@ -78,11 +77,11 @@ void	ft_move_left(int key, t_data **game)
 			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
 		}
 	}
+	ft_draw_map(game);
 }
 
-void	ft_move_right(int key, t_data **game)
+void	ft_move_right(t_data **game)
 {
-	(void) key;
 	int	x;
 	int	y;
 
@@ -101,4 +100,5 @@ void	ft_move_right(int key, t_data **game)
 			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
 		}
 	}
+	ft_draw_map(game);
 }

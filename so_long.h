@@ -19,7 +19,7 @@
 # include <unistd.h>
 # include <fcntl.h>
 
-# define PIC_SIZE 50
+# define PIC_SIZE 100
 
 typedef struct s_data
 {
@@ -75,8 +75,8 @@ void	ft_check_data(char *file);
 //static int		ft_chars(int ch);
 //static void		ft_line_check(char *line);
 //static int		ft_exit_check(char *line);
-void			ft_map_chars_check(char *file);
-void			ft_wall_check(t_data *game);
+//void			ft_map_chars_check(char *file);
+//void			ft_wall_check(t_data *game);
 
 //error.c
 void	ft_error(int check);
@@ -91,10 +91,10 @@ void	ft_image_to_window(t_data **game, char ch, int i, int j);
 void	ft_draw_map(t_data **game);
 
 //actions.c
-void	ft_move_up(int key, t_data **game);
-void	ft_move_down(int key, t_data **game);
-void	ft_move_left(int key, t_data **game);
-void	ft_move_right(int key, t_data **game);
+void	ft_move_up(t_data **game);
+void	ft_move_down(t_data **game);
+void	ft_move_left(t_data **game);
+void	ft_move_right(t_data **game);
 
 //actions_utils.c
 void	ft_change_map(t_data **game, char ch, int x, int y);
@@ -104,7 +104,7 @@ void	ft_check_score(t_data **game, int x, int y);
 int		if_win(t_data **game, int x, int y);
 
 //animation.c
-void	ft_escape(int key, t_data **game);
+void	ft_escape(t_data **game);
 int		ft_key(int key, t_data **game);
 void	ft_key_actions(t_data **game);
 

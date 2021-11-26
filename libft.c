@@ -12,7 +12,7 @@
 
 #include "so_long.h"
 
-int	ft_strlen(const char *str)
+int	ft_strlen(const char *str) // есть в гнл, добавить свой гнл со всеми
 {
 	int	i;
 
@@ -36,7 +36,7 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 }
 
-char	*ft_strdup(const char *str)
+char	*ft_strdup(const char *str) // есть в гнл
 {
 	int		i;
 	int		len;

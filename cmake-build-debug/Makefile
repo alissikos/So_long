@@ -129,6 +129,342 @@ so_long/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/build
 .PHONY : so_long/fast
 
+actions.o: actions.c.o
+.PHONY : actions.o
+
+# target to build an object file
+actions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/actions.c.o
+.PHONY : actions.c.o
+
+actions.i: actions.c.i
+.PHONY : actions.i
+
+# target to preprocess a source file
+actions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/actions.c.i
+.PHONY : actions.c.i
+
+actions.s: actions.c.s
+.PHONY : actions.s
+
+# target to generate assembly for a file
+actions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/actions.c.s
+.PHONY : actions.c.s
+
+actions_utils.o: actions_utils.c.o
+.PHONY : actions_utils.o
+
+# target to build an object file
+actions_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/actions_utils.c.o
+.PHONY : actions_utils.c.o
+
+actions_utils.i: actions_utils.c.i
+.PHONY : actions_utils.i
+
+# target to preprocess a source file
+actions_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/actions_utils.c.i
+.PHONY : actions_utils.c.i
+
+actions_utils.s: actions_utils.c.s
+.PHONY : actions_utils.s
+
+# target to generate assembly for a file
+actions_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/actions_utils.c.s
+.PHONY : actions_utils.c.s
+
+animation.o: animation.c.o
+.PHONY : animation.o
+
+# target to build an object file
+animation.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/animation.c.o
+.PHONY : animation.c.o
+
+animation.i: animation.c.i
+.PHONY : animation.i
+
+# target to preprocess a source file
+animation.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/animation.c.i
+.PHONY : animation.c.i
+
+animation.s: animation.c.s
+.PHONY : animation.s
+
+# target to generate assembly for a file
+animation.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/animation.c.s
+.PHONY : animation.c.s
+
+clean.o: clean.c.o
+.PHONY : clean.o
+
+# target to build an object file
+clean.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/clean.c.o
+.PHONY : clean.c.o
+
+clean.i: clean.c.i
+.PHONY : clean.i
+
+# target to preprocess a source file
+clean.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/clean.c.i
+.PHONY : clean.c.i
+
+clean.s: clean.c.s
+.PHONY : clean.s
+
+# target to generate assembly for a file
+clean.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/clean.c.s
+.PHONY : clean.c.s
+
+error.o: error.c.o
+.PHONY : error.o
+
+# target to build an object file
+error.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/error.c.o
+.PHONY : error.c.o
+
+error.i: error.c.i
+.PHONY : error.i
+
+# target to preprocess a source file
+error.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/error.c.i
+.PHONY : error.c.i
+
+error.s: error.c.s
+.PHONY : error.s
+
+# target to generate assembly for a file
+error.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/error.c.s
+.PHONY : error.c.s
+
+game_end.o: game_end.c.o
+.PHONY : game_end.o
+
+# target to build an object file
+game_end.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/game_end.c.o
+.PHONY : game_end.c.o
+
+game_end.i: game_end.c.i
+.PHONY : game_end.i
+
+# target to preprocess a source file
+game_end.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/game_end.c.i
+.PHONY : game_end.c.i
+
+game_end.s: game_end.c.s
+.PHONY : game_end.s
+
+# target to generate assembly for a file
+game_end.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/game_end.c.s
+.PHONY : game_end.c.s
+
+game_utils.o: game_utils.c.o
+.PHONY : game_utils.o
+
+# target to build an object file
+game_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/game_utils.c.o
+.PHONY : game_utils.c.o
+
+game_utils.i: game_utils.c.i
+.PHONY : game_utils.i
+
+# target to preprocess a source file
+game_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/game_utils.c.i
+.PHONY : game_utils.c.i
+
+game_utils.s: game_utils.c.s
+.PHONY : game_utils.s
+
+# target to generate assembly for a file
+game_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/game_utils.c.s
+.PHONY : game_utils.c.s
+
+get_next_line.o: get_next_line.c.o
+.PHONY : get_next_line.o
+
+# target to build an object file
+get_next_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line.c.o
+.PHONY : get_next_line.c.o
+
+get_next_line.i: get_next_line.c.i
+.PHONY : get_next_line.i
+
+# target to preprocess a source file
+get_next_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line.c.i
+.PHONY : get_next_line.c.i
+
+get_next_line.s: get_next_line.c.s
+.PHONY : get_next_line.s
+
+# target to generate assembly for a file
+get_next_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/get_next_line.c.s
+.PHONY : get_next_line.c.s
+
+image.o: image.c.o
+.PHONY : image.o
+
+# target to build an object file
+image.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/image.c.o
+.PHONY : image.c.o
+
+image.i: image.c.i
+.PHONY : image.i
+
+# target to preprocess a source file
+image.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/image.c.i
+.PHONY : image.c.i
+
+image.s: image.c.s
+.PHONY : image.s
+
+# target to generate assembly for a file
+image.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/image.c.s
+.PHONY : image.c.s
+
+init.o: init.c.o
+.PHONY : init.o
+
+# target to build an object file
+init.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/init.c.o
+.PHONY : init.c.o
+
+init.i: init.c.i
+.PHONY : init.i
+
+# target to preprocess a source file
+init.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/init.c.i
+.PHONY : init.c.i
+
+init.s: init.c.s
+.PHONY : init.s
+
+# target to generate assembly for a file
+init.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/init.c.s
+.PHONY : init.c.s
+
+libft.o: libft.c.o
+.PHONY : libft.o
+
+# target to build an object file
+libft.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft.c.o
+.PHONY : libft.c.o
+
+libft.i: libft.c.i
+.PHONY : libft.i
+
+# target to preprocess a source file
+libft.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft.c.i
+.PHONY : libft.c.i
+
+libft.s: libft.c.s
+.PHONY : libft.s
+
+# target to generate assembly for a file
+libft.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/libft.c.s
+.PHONY : libft.c.s
+
+map.o: map.c.o
+.PHONY : map.o
+
+# target to build an object file
+map.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/map.c.o
+.PHONY : map.c.o
+
+map.i: map.c.i
+.PHONY : map.i
+
+# target to preprocess a source file
+map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/map.c.i
+.PHONY : map.c.i
+
+map.s: map.c.s
+.PHONY : map.s
+
+# target to generate assembly for a file
+map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/map.c.s
+.PHONY : map.c.s
+
+map_checks.o: map_checks.c.o
+.PHONY : map_checks.o
+
+# target to build an object file
+map_checks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/map_checks.c.o
+.PHONY : map_checks.c.o
+
+map_checks.i: map_checks.c.i
+.PHONY : map_checks.i
+
+# target to preprocess a source file
+map_checks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/map_checks.c.i
+.PHONY : map_checks.c.i
+
+map_checks.s: map_checks.c.s
+.PHONY : map_checks.s
+
+# target to generate assembly for a file
+map_checks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/map_checks.c.s
+.PHONY : map_checks.c.s
+
+map_checks2.o: map_checks2.c.o
+.PHONY : map_checks2.o
+
+# target to build an object file
+map_checks2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/map_checks2.c.o
+.PHONY : map_checks2.c.o
+
+map_checks2.i: map_checks2.c.i
+.PHONY : map_checks2.i
+
+# target to preprocess a source file
+map_checks2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/map_checks2.c.i
+.PHONY : map_checks2.c.i
+
+map_checks2.s: map_checks2.c.s
+.PHONY : map_checks2.s
+
+# target to generate assembly for a file
+map_checks2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_long.dir/build.make CMakeFiles/so_long.dir/map_checks2.c.s
+.PHONY : map_checks2.c.s
+
 so_long.o: so_long.c.o
 .PHONY : so_long.o
 
@@ -162,6 +498,48 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... so_long"
+	@echo "... actions.o"
+	@echo "... actions.i"
+	@echo "... actions.s"
+	@echo "... actions_utils.o"
+	@echo "... actions_utils.i"
+	@echo "... actions_utils.s"
+	@echo "... animation.o"
+	@echo "... animation.i"
+	@echo "... animation.s"
+	@echo "... clean.o"
+	@echo "... clean.i"
+	@echo "... clean.s"
+	@echo "... error.o"
+	@echo "... error.i"
+	@echo "... error.s"
+	@echo "... game_end.o"
+	@echo "... game_end.i"
+	@echo "... game_end.s"
+	@echo "... game_utils.o"
+	@echo "... game_utils.i"
+	@echo "... game_utils.s"
+	@echo "... get_next_line.o"
+	@echo "... get_next_line.i"
+	@echo "... get_next_line.s"
+	@echo "... image.o"
+	@echo "... image.i"
+	@echo "... image.s"
+	@echo "... init.o"
+	@echo "... init.i"
+	@echo "... init.s"
+	@echo "... libft.o"
+	@echo "... libft.i"
+	@echo "... libft.s"
+	@echo "... map.o"
+	@echo "... map.i"
+	@echo "... map.s"
+	@echo "... map_checks.o"
+	@echo "... map_checks.i"
+	@echo "... map_checks.s"
+	@echo "... map_checks2.o"
+	@echo "... map_checks2.i"
+	@echo "... map_checks2.s"
 	@echo "... so_long.o"
 	@echo "... so_long.i"
 	@echo "... so_long.s"

@@ -87,7 +87,7 @@ void	ft_map_name(char *file)
 	size_t		len;
 
 	len = ft_strlen(file);
-	dot = (const char *)&file[len - 4];
+	dot = (const char *) &file[len - 4];
 	if (ft_strncmp(dot, ".ber", 4) != 0)
 		ft_error(1);
 }

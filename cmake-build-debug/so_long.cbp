@@ -80,6 +80,48 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/aheidy/so_long/actions.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/so_long/actions_utils.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/so_long/animation.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/so_long/clean.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/so_long/error.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/so_long/game_end.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/so_long/game_utils.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/so_long/get_next_line.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/so_long/image.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/so_long/init.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/so_long/libft.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/so_long/map.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/so_long/map_checks.c">
+			<Option target="so_long"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/so_long/map_checks2.c">
+			<Option target="so_long"/>
+		</Unit>
 		<Unit filename="/Users/aheidy/so_long/so_long.c">
 			<Option target="so_long"/>
 		</Unit>
