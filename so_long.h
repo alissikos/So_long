@@ -72,11 +72,8 @@ void	ft_map_name(char *file);
 void	ft_check_data(char *file);
 
 //map_checks2.c
-//static int		ft_chars(int ch);
-//static void		ft_line_check(char *line);
-//static int		ft_exit_check(char *line);
-//void			ft_map_chars_check(char *file);
-//void			ft_wall_check(t_data *game);
+void			ft_map_chars_check(char *file);
+void			ft_wall_check(t_data *game);
 
 //error.c
 void	ft_error(int check);

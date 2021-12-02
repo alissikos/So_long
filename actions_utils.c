@@ -44,8 +44,8 @@ void	ft_check_score(t_data **game, int x, int y)
 	(*game)->step += 1;
 //	if ((*game)->num_of_collectibles == 0) // это кажется для макса шагов
 //		(*game)->score += 1;
-	if (!(*game)->out)
-		(*game)->end = 2;
+//	if ((*game)->out)  // переписать, было для макс счета
+//		(*game)->end = 2;
 }
 
 int	if_win(t_data **game, int x, int y)

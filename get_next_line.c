@@ -26,7 +26,8 @@ int	get_next_line(char **line, int fd)
 	while ((rd > 0) && ch != '\n')
 	{
 		rd = read(fd, &ch, 1);
-		buffer[i++] = ch;
+		if (ch != '\n' && rd != 0)
+			buffer[i++] = ch;
 	}
 	buffer[i] = '\0';
 	return (rd);

@@ -32,7 +32,7 @@ void	ft_move_up(t_data **game)
 		}
 	}
 	printf("Step:%d\n", (*game)->steps++); // написать везде + сравнивать прев степ со степом, только прир азнице печатать (в бонусах не нужно)
-	ft_draw_map(game);
+//	ft_draw_map(game);
 }
 
 void	ft_move_down(t_data **game)
@@ -54,7 +54,7 @@ void	ft_move_down(t_data **game)
 			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
 		}
 	}
-	ft_draw_map(game);
+//	ft_draw_map(game);
 }
 
 void	ft_move_left(t_data **game)
@@ -77,7 +77,7 @@ void	ft_move_left(t_data **game)
 			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
 		}
 	}
-	ft_draw_map(game);
+//	ft_draw_map(game);
 }
 
 void	ft_move_right(t_data **game)
@@ -100,5 +100,5 @@ void	ft_move_right(t_data **game)
 			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
 		}
 	}
-	ft_draw_map(game);
+//	ft_draw_map(game);
 }

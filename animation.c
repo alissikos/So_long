@@ -31,14 +31,15 @@ int	ft_key(int key, t_data **game)
 		ft_move_right(game);
 	if (key == 53)
 		ft_escape(game);
-//	ft_draw_map(game);
+	if (!(*game)->end)
+		ft_draw_map(game);
 	return (0);
 }
 
 void	ft_key_actions(t_data **game)
 {
-	mlx_hook((*game)->win_ptr, 2, 0, ft_key, game);
-	mlx_key_hook((*game)->win_ptr, ft_key, *game);
+//	mlx_hook((*game)->win_ptr, 2, 0, ft_key, game);
+	mlx_key_hook((*game)->win_ptr, ft_key, game);
 	mlx_loop_hook((*game)->mlx_ptr, ft_game_end, game);
 	mlx_hook((*game)->win_ptr, 17, 0, ft_close, game);
 }

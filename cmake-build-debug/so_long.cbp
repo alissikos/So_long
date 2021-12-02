@@ -8,43 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/aheidy/so_long/cmake-build-debug"/>
+				<Option working_dir="/Users/aheidy/s/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/aheidy/so_long/cmake-build-debug"/>
+				<Option working_dir="/Users/aheidy/s/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/aheidy/so_long/cmake-build-debug"/>
+				<Option working_dir="/Users/aheidy/s/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="so_long">
-				<Option output="/Users/aheidy/so_long/cmake-build-debug/so_long" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/aheidy/so_long/cmake-build-debug"/>
+				<Option output="/Users/aheidy/s/cmake-build-debug/so_long" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aheidy/s/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/aheidy/so_long/."/>
+					<Add directory="/Users/aheidy/s/."/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -52,20 +52,20 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 so_long"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 so_long"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="so_long/fast">
-				<Option output="/Users/aheidy/so_long/cmake-build-debug/so_long" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/aheidy/so_long/cmake-build-debug"/>
+				<Option output="/Users/aheidy/s/cmake-build-debug/so_long" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aheidy/s/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/aheidy/so_long/."/>
+					<Add directory="/Users/aheidy/s/."/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -73,62 +73,62 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 so_long/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/so_long/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 so_long/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/s/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/aheidy/so_long/actions.c">
+		<Unit filename="/Users/aheidy/s/actions.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/actions_utils.c">
+		<Unit filename="/Users/aheidy/s/actions_utils.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/animation.c">
+		<Unit filename="/Users/aheidy/s/animation.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/clean.c">
+		<Unit filename="/Users/aheidy/s/clean.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/error.c">
+		<Unit filename="/Users/aheidy/s/error.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/game_end.c">
+		<Unit filename="/Users/aheidy/s/game_end.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/game_utils.c">
+		<Unit filename="/Users/aheidy/s/game_utils.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/get_next_line.c">
+		<Unit filename="/Users/aheidy/s/get_next_line.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/image.c">
+		<Unit filename="/Users/aheidy/s/image.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/init.c">
+		<Unit filename="/Users/aheidy/s/init.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/libft.c">
+		<Unit filename="/Users/aheidy/s/libft.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/map.c">
+		<Unit filename="/Users/aheidy/s/map.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/map_checks.c">
+		<Unit filename="/Users/aheidy/s/map_checks.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/map_checks2.c">
+		<Unit filename="/Users/aheidy/s/map_checks2.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/so_long.c">
+		<Unit filename="/Users/aheidy/s/so_long.c">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/so_long.h">
+		<Unit filename="/Users/aheidy/s/so_long.h">
 			<Option target="so_long"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/so_long/CMakeLists.txt">
+		<Unit filename="/Users/aheidy/s/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

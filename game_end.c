@@ -31,12 +31,12 @@ int	ft_game_end(t_data **game)
 		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
 		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "You win!");
 	}
-	else if ((*game)->end == 1)
-	{
-		ft_draw_map(game);
-		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "Game over.");
-	}
-	else if ((*game)->end == 2)
+//	else if ((*game)->end == 1) // при столкновении с врагом
+//	{
+//		ft_draw_map(game);
+//		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "Game over.");
+//	}
+	else if ((*game)->end == 2) // игра окончена
 	{
 		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
 		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "Game over.");
