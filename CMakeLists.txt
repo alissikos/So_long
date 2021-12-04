@@ -21,7 +21,24 @@ add_executable(so_long
         map_checks.c
         map_checks2.c
         so_long.c
-        so_long.h)
+        so_long.h
+        so_long_bonus
+        actions_bonus.c
+        actions_utils_bonus.c
+        animation_bonus.c
+        clean_bonus.c
+        error_bonus.c
+        game_end_bonus.c
+        game_utils_bonus.c
+        get_next_line_bonus.c
+        image_bonus.c
+        init_bonus.c
+        libft_bonus.c
+        map_bonus.c
+        map_checks_bonus.c
+        map_checks2_bonus.c
+        so_long_bonus.c
+        so_long_bonus.h)
 
 target_link_libraries(so_long ~/so_long/mlx/libmlx.a)
 target_link_libraries(so_long "-framework OpenGL")
