@@ -36,10 +36,10 @@ int	ft_game_end(t_data **game)
 //		ft_draw_map(game);
 //		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "Game over.");
 //	}
-	else if ((*game)->end == 2) // игра окончена
-	{
-		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
-		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "Game over.");
-	}
+//	else if ((*game)->end == 2) // игра окончена - в основной части проиграть невозможно
+//	{
+//		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
+//		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "Game over.");
+//	}
 	return (0);
 }

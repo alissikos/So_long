@@ -24,11 +24,11 @@ void	ft_xpm_to_image(t_data **game)
 	int	img_width;
 	int	img_height;
 
-	(*game)->wall = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/lipstick.xpm", &img_width, &img_height);
-	(*game)->player_left = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/00.xpm", &img_width, &img_height);
+	(*game)->wall = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/obstacle.xpm", &img_width, &img_height);
+	(*game)->player_left = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/doll.xpm", &img_width, &img_height);
 //	(*game)->player_right = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/00_r.xpm", &img_width, &img_height);
-	(*game)->collectible = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/collectible.xpm", &img_width, &img_height);
-	(*game)->empty_space = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/background.xpm", &img_width, &img_height);
+	(*game)->collectible = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/watermelon1.xpm", &img_width, &img_height);
+	(*game)->empty_space = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/background1.xpm", &img_width, &img_height);
 	(*game)->exit_closed = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/exit_c.xpm", &img_width, &img_height);
 	(*game)->exit_open = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/exit_o.xpm", &img_width, &img_height);
 }
