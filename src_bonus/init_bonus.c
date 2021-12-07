@@ -18,6 +18,12 @@ t_data	*ft_init_struct(t_data *game)
 	game->wall = NULL;
 	game->player_left = NULL;
 	game->player_right = NULL;
+	game->pl00 = NULL;
+	game->pl01 = NULL;
+	game->pl02 = NULL;
+	game->pl03 = NULL;
+	game->pl04 = NULL;
+	game->pl05 = NULL;
 	game->collectible = NULL;
 	game->empty_space = NULL;
 	game->exit_closed = NULL;
@@ -36,6 +42,7 @@ t_data	*ft_init_struct(t_data *game)
 	game->out = 0;
 	game->end = 0;
 	game->counter = 0;
+	game->b_flag = 0;
 	return (game);
 }
 

@@ -44,9 +44,18 @@ void	ft_key_actions(t_data **game)
 	mlx_hook((*game)->win_ptr, 17, 0, ft_close, game);
 }
 
-//void 	ft_boobs(t_data **game)
-//{
-//
-//
-//	while ((*game)->num_of_collectibles != 0)
-//}
+void 	ft_change_img(t_data **game, int i, int j)
+{
+	if ((*game)->b_flag == 0)
+		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl00, i, j);
+	if ((*game)->b_flag == 1)
+		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl01, i, j);
+	if ((*game)->b_flag == 2)
+		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl02, i, j);
+	if ((*game)->b_flag == 3)
+		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl03, i, j);
+	if ((*game)->b_flag == 4)
+		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl04, i, j);
+	if ((*game)->b_flag >= 5)
+		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl05, i, j);
+}

@@ -28,6 +28,12 @@ typedef struct s_data
 	void	*wall;
 	void	*player_left;
 	void	*player_right;
+	void	*pl00;
+	void	*pl01;
+	void	*pl02;
+	void	*pl03;
+	void	*pl04;
+	void	*pl05;
 	void	*collectible;
 	void	*empty_space;
 	void	*exit_closed;
@@ -47,6 +53,7 @@ typedef struct s_data
 	int		out;
 	int		end;
 	int		counter;
+	int		b_flag;
 }			t_data;
 
 // gnl and libft
@@ -99,6 +106,7 @@ int		if_win(t_data **game, int x, int y);
 void	ft_escape(t_data **game);
 int		ft_key(int key, t_data **game);
 void	ft_key_actions(t_data **game);
+void 	ft_change_img(t_data **game, int i, int j);
 
 //game_utils.c
 void	ft_count_collectibles(t_data **game);

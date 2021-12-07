@@ -27,8 +27,14 @@ void	ft_xpm_to_image(t_data **game)
 	(*game)->wall = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/obstacle.xpm", &img_width, &img_height);
 	(*game)->player_left = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/doll.xpm", &img_width, &img_height);
 //	(*game)->player_right = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/00_r.xpm", &img_width, &img_height);
-	(*game)->collectible = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/watermelon1.xpm", &img_width, &img_height);
-	(*game)->empty_space = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/background1.xpm", &img_width, &img_height);
+	(*game)->pl00 = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/00.xpm", &img_width, &img_height);
+	(*game)->pl01 = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/01.xpm", &img_width, &img_height);
+	(*game)->pl02 = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/02.xpm", &img_width, &img_height);
+	(*game)->pl03 = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/03.xpm", &img_width, &img_height);
+	(*game)->pl04 = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/04.xpm", &img_width, &img_height);
+	(*game)->pl05 = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/05.xpm", &img_width, &img_height);
+	(*game)->collectible = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/cabbage.xpm", &img_width, &img_height);
+	(*game)->empty_space = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/grass.xpm", &img_width, &img_height);
 	(*game)->exit_closed = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/exit_c.xpm", &img_width, &img_height);
 	(*game)->exit_open = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/exit_o.xpm", &img_width, &img_height);
 }
@@ -42,7 +48,8 @@ void ft_image_to_window(t_data **game, char ch, int i, int j)
 	if (ch == 'C')
 		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->collectible, i, j);
 	if (ch == 'P')
-		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->player_left, i, j);
+		ft_change_img(game, i, j);
+//		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->player_left, i, j);
 	if (ch == 'E')
 	{
 		if ((*game)->num_of_collectibles > 0)
