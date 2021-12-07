@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include
+#include "../hdr/so_long_bonus.h"
 
 void	ft_escape(t_data **game)
 {
@@ -44,9 +44,9 @@ void	ft_key_actions(t_data **game)
 	mlx_hook((*game)->win_ptr, 17, 0, ft_close, game);
 }
 
-void 	ft_boobs(t_data **game)
-{
-	
-	
-	while ((*game)->num_of_collectibles != 0)
-}
+//void 	ft_boobs(t_data **game)
+//{
+//
+//
+//	while ((*game)->num_of_collectibles != 0)
+//}

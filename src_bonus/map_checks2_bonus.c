@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../hdr/so_long_bonus.h"
 
 static int	ft_chars(int ch)
 {

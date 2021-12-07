@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../hdr/so_long.h"
 
 int	get_next_line(char **line, int fd)
 {

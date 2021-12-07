@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../hdr/so_long_bonus.h"
 
 size_t	ft_get_height(char *file)
 {

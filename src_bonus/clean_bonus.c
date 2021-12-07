@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../hdr/so_long_bonus.h"
 
 void	ft_clean_array(t_data *game)
 {

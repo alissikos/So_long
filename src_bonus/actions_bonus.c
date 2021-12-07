@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long_bonus.h"
+#include "../hdr/so_long_bonus.h"
 
 void	ft_move_up(t_data **game)
 {

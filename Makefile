@@ -8,11 +8,13 @@ OBJ_DIR = ./obj/
 
 SRC_BONUS_DIR = ./src_bonus/
 
+HDR_DIR = ./hdr/
+
 OBJ_BONUS_DIR = ./obj_bonus/
 
 LIBMLX_DIR = ./mlx/
 
-SRC	=	$(SRCS_DIR)	actions.c		\
+SRC	=	$(SRC_DIR)	actions.c		\
 					actions_utils.c	\
 					animation.c		\
 					error.c			\
@@ -28,7 +30,7 @@ SRC	=	$(SRCS_DIR)	actions.c		\
 					game_end.c		\
 					so_long.c
 
-SRC_BONUS =	$(SRCS_BONUS_DIR)	actions_bonus.c		\
+SRC_BONUS =	$(SRC_BONUS_DIR)	actions_bonus.c		\
             					actions_utils_bonus.c	\
             					animation_bonus.c		\
             					error_bonus.c			\
@@ -44,49 +46,48 @@ SRC_BONUS =	$(SRCS_BONUS_DIR)	actions_bonus.c		\
             					game_end_bonus.c		\
             					so_long_bonus.c
 
+HDR = ./hdr/so_long.h
 
-OBJ = 	$(addprefix $(OBJS_DIR), $(notdir $(SRCS:.c=.o)))
+HDR_BONUS = ./hdr/so_long_bonus.h
 
-OBJ_BONUS = 	$(addprefix $(OBJS_BONUS_DIR), $(notdir $(SRCS_BONUS:.c=.o)))
+OBJ = 	$(addprefix $(OBJ_DIR), $(notdir $(SRC:.c=.o)))
+
+OBJ_BONUS = 	$(addprefix $(OBJ_BONUS_DIR), $(notdir $(SRC_BONUS:.c=.o)))
 
 CC =	gcc
 
 RM =	rm -f
 
-INCL =	so_long.h
-
-INCL_BONUS =	so_long_bonus.h
-
 FLAGS = -Wall -Wextra -Werror -g #-fsanitize=address
 
 LDFLAGS		=	-L$(LIBMLX_DIR) -lmlx -framework OpenGL -framework Appkit -O3
 
-LIBMLX		=	$(addprefix $(LIBMLX_DIR), libmlx.a)
+LIBMLX		=	$(LIBMLX_DIR, libmlx.a)
 
 all :	$(NAME) $(LIBMLX)
 
-$(OBJ_DIR)%.o:	$(SRC_DIR)%.c $(INCL) $(LIBMLX) Makefile | $(OBJ_DIR)
-	$(CC) $(FLAGS) -O3 -I$(INCL) -Imlx -c $< -o $@
+$(OBJ_DIR)%.o:	$(SRC_DIR)%.c $(HDR) $(LIBMLX) Makefile | $(OBJ_DIR)
+	$(CC) $(FLAGS) -O3 -I$(HDR) -Imlx -c $< -o $@
 
-$(OBJ_BONUS_DIR)%.o:	$(SRC_BONUS_DIR)%.c $(INCL_BONUS) $(LIBMLX) Makefile | $(OBJ_BONUS_DIR)
-	$(CC) $(FLAGS) -O3 -I$(INCL_BONUS) -Imlx -c $< -o $@
+$(OBJ_BONUS_DIR)%.o:	$(SRC_BONUS_DIR)%.c $(HDR_BONUS) $(LIBMLX) Makefile | $(OBJ_BONUS_DIR)
+	$(CC) $(FLAGS) -O3 -I$(HDR_BONUS) -Imlx -c $< -o $@
 
 $(LIBMLX):
 	make -C $(LIBMLX_DIR)
 
 $(NAME): $(OBJ) $(LIBMLX)
-	@$(CC) $(FLAGS) $(OBJ) -o $(NAME) $(LDFLAGS)
+	@$(CC) $(OBJ) -o $@ $(LDFLAGS) #$(NAME)
 
 $(NAME_BONUS): $(OBJ_BONUS) $(LIBMLX)
-	@$(CC) $(FLAGS) $(OBJ_BONUS) -o $(NAME_BONUS) $(LDFLAGS)
+	@$(CC) $(OBJ_BONUS) -o $@ $(LDFLAGS) #$(NAME_BONUS)
 
-bonus: $(NAME_BONUS) $(LIBMLX)
+bonus: $(LIBMLX) $(NAME_BONUS)
 
 clean:
-	$(RM) $(OBJ_DIR) $(OBJ_BONUS_DIR) $(LIBMLX)
+	$(RM) -r $(OBJ_DIR) $(OBJ_BONUS_DIR)
 
 fclean:	clean
-	$(RM) $(NAME) $(NAME_BONUS) $(LIBMLX)
+	$(RM) $(NAME) $(NAME_BONUS)
 
 $(OBJ_DIR):
 	mkdir $(OBJ_DIR)

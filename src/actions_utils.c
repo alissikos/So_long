@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../hdr/so_long.h"
 
 char	get_map_char(t_data **game, int x, int y)
 {

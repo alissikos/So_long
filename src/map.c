@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../hdr/so_long.h"
 
 int	ft_reading_map(char *file, t_data **game)
 {

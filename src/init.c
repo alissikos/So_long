@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../hdr/so_long.h"
 
 t_data	*ft_init_struct(t_data *game)
 {

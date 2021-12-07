@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/aheidy/s
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/aheidy/s
 -- The C compiler identification is AppleClang 11.0.0.11000033
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
@@ -6,5 +6,14 @@
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Configuring done
--- Generating done
--- Build files have been written to: /Users/aheidy/s/cmake-build-debug
+CMake Error at CMakeLists.txt:8 (add_executable):
+  Cannot find source file:
+
+    actions.c
+
+
+CMake Error at CMakeLists.txt:8 (add_executable):
+  No SOURCES given to target: so_long
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

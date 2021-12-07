@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../hdr/so_long_bonus.h"
 
 void	ft_count_collectibles(t_data **game)
 {
