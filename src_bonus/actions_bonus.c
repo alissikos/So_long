@@ -77,6 +77,7 @@ void	ft_move_left(t_data **game)
 			(*game)->flag_player = 0;
 			ft_change_map(game, '0', x, y);
 			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
+//			(*game)->flag_right_left = 2;
 			printf("Step:%d\n", (*game)->steps++);
 		}
 	}
@@ -101,6 +102,7 @@ void	ft_move_right(t_data **game)
 			(*game)->flag_player = 1;
 			ft_change_map(game, '0', x, y);
 			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
+//			(*game)->flag_right_left = 1;
 			printf("Step:%d\n", (*game)->steps++);
 		}
 	}

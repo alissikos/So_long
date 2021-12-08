@@ -34,6 +34,12 @@ typedef struct s_data
 	void	*pl03;
 	void	*pl04;
 	void	*pl05;
+	void	*pl00_l;
+	void	*pl01_l;
+	void	*pl02_l;
+	void	*pl03_l;
+	void	*pl04_l;
+	void	*pl05_l;
 	void	*collectible;
 	void	*empty_space;
 	void	*exit_closed;
@@ -44,6 +50,7 @@ typedef struct s_data
 	int		x_player;
 	int		y_player;
 	int		flag_player;
+	int 	flag_right_left;
 	int		num_of_collectibles;
 	int		score;
 	char	*assets;
@@ -83,11 +90,12 @@ void	ft_error(int check);
 //map.c
 int	ft_reading_map(char *file, t_data **game);
 
-//image.c
+//image_bonus.c
 void	ft_init_window(t_data **game);
-void	ft_xpm_to_image(t_data **game);
+void	ft_xpm_to_image_bonus(t_data **game);
 void	ft_image_to_window(t_data **game, char ch, int i, int j);
 void	ft_draw_map(t_data **game);
+void	ft_xpm_to_player(t_data **game);
 
 //actions.c
 void	ft_move_up(t_data **game);

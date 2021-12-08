@@ -1,45 +1,31 @@
-cmake_minimum_required(VERSION 3.20)
-project(so_long C)
+cmake_minimum_required(VERSION 3.21)
+project(s C)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD 99)
 
-include_directories(.)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -framework OpenGL -framework AppKit -L ../mlx -lmlx")
 
-add_executable(so_long
-        actions.c
-        actions_utils.c
-        animation.c
-        clean.c
-        error.c
-        game_end.c
-        game_utils.c
-        get_next_line.c
-        image.c
-        init.c
-        libft.c
-        map.c
-        map_checks.c
-        map_checks2.c
-        so_long.c
-        so_long.h
-        so_long_bonus
-        actions_bonus.c
-        actions_utils_bonus.c
-        animation_bonus.c
-        clean_bonus.c
-        error_bonus.c
-        game_end_bonus.c
-        game_utils_bonus.c
-        get_next_line_bonus.c
-        image_bonus.c
-        init_bonus.c
-        libft_bonus.c
-        map_bonus.c
-        map_checks_bonus.c
-        map_checks2_bonus.c
-        so_long_bonus.c
-        so_long_bonus.h)
 
-target_link_libraries(so_long ~/so_long/mlx/libmlx.a)
-target_link_libraries(so_long "-framework OpenGL")
-target_link_libraries(so_long "-framework AppKit")
+
+include_directories(hdr)
+include_directories(mlx)
+include_directories(src_bonus)
+
+add_executable(s
+        hdr/so_long.h
+        hdr/so_long_bonus.h
+        src_bonus/actions_bonus.c
+        src_bonus/actions_utils_bonus.c
+        src_bonus/animation_bonus.c
+        src_bonus/clean_bonus.c
+        src_bonus/error_bonus.c
+        src_bonus/game_end_bonus.c
+        src_bonus/game_utils_bonus.c
+        src_bonus/get_next_line_bonus.c
+        src_bonus/image_bonus.c
+        src_bonus/init_bonus.c
+        src_bonus/libft_bonus.c
+        src_bonus/map_bonus.c
+        src_bonus/map_checks2_bonus.c
+        src_bonus/map_checks_bonus.c
+        src_bonus/so_long_bonus.c)

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="s" targetName="s" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf5cc0c8-05ae-4a2c-a64b-91058afaddde" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/s.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/so_long2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/00.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/00.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/01.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/02.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/02.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/03.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/03.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/04.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/04.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/05.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/05.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/cabbage.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cabbage.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/so_long.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/so_long.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/so_long.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/so_long.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/so_long.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/so_long.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/so_long.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/so_long" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/so_long.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdr/so_long_bonus.h" beforeDir="false" afterPath="$PROJECT_DIR$/hdr/so_long_bonus.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/00.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/00.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/images/00.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/01.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/images/01.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/02.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/02.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/images/02.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/03.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/03.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/images/03.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/04.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/04.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/images/04.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/05.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/05.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/images/05.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cabbage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cabbage.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/images/cabbage.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj_bonus/actions_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/actions_bonus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj_bonus/actions_utils_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/actions_utils_bonus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj_bonus/animation_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/animation_bonus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj_bonus/clean_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/clean_bonus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj_bonus/game_end_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/game_end_bonus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj_bonus/game_utils_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/game_utils_bonus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj_bonus/image_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/image_bonus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj_bonus/init_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/init_bonus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj_bonus/map_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/map_bonus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj_bonus/map_checks2_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/map_checks2_bonus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj_bonus/so_long_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/so_long_bonus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/so_long_bonus" beforeDir="false" afterPath="$PROJECT_DIR$/so_long_bonus" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_bonus/actions_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/actions_bonus.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_bonus/animation_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/animation_bonus.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_bonus/change_img.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_bonus/game_utils_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/game_utils_bonus.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_bonus/image_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/image_bonus.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_bonus/init_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/init_bonus.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2021" />
+    <option name="minorVersion" value="3" />
+  </component>
+  <component name="ProjectId" id="220ZypSFujBxMwvHxBjDwJnBu43" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="s" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="p.ber" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="s" TARGET_NAME="s" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="s" RUN_TARGET_NAME="s">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf5cc0c8-05ae-4a2c-a64b-91058afaddde" name="Changes" comment="" />
+      <created>1638976721527</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638976721527</updated>
+      <workItem from="1638976722662" duration="3753000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src_bonus/so_long_bonus.c</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
