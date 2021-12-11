@@ -44,6 +44,8 @@ SRC_BONUS =	$(SRC_BONUS_DIR)	actions_bonus.c		\
             					map_checks2_bonus.c	\
             					clean_bonus.c			\
             					game_end_bonus.c		\
+            					libft_b.c				\
+            					enemy.c					\
             					so_long_bonus.c
 
 HDR = ./hdr/so_long.h

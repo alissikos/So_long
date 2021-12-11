@@ -44,11 +44,17 @@ typedef struct s_data
 	void	*empty_space;
 	void	*exit_closed;
 	void	*exit_open;
+	void	*enemy;
+	void	*game_over;
+	void	*game_win;
 	char	**array;
 	int		width;
 	int		height;
 	int		x_player;
 	int		y_player;
+	int		x_enemy;
+	int		y_enemy;
+	int		enem_c;
 	int		flag_player;
 	int 	flag_right_left;
 	int		num_of_collectibles;
@@ -68,6 +74,9 @@ int		get_next_line(char **line, int fd);
 int		ft_strlen(const char *str);
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
 char	*ft_strdup(const char *str);
+
+//libft_b.c
+char	*ft_itoa(int n);
 
 //init.c
 t_data	*ft_init_struct(t_data *game);
@@ -111,6 +120,7 @@ void	ft_check_score(t_data **game, int x, int y);
 int		if_win(t_data **game, int x, int y);
 
 //animation.c
+int 	ft_key_hook(int key, t_data *game);
 void	ft_escape(t_data **game);
 int		ft_key(int key, t_data **game);
 void	ft_key_actions(t_data **game);
@@ -128,5 +138,11 @@ void	ft_clean_struct(t_data *game);
 //game_end.c
 int		ft_close(t_data **game);
 int		ft_game_end(t_data **game);
+
+//enemy.c
+void	ft_set_enemy_pos_case(t_data **game);
+void	ft_set_enemy(t_data **game);
+void	ft_put_enemy(t_data **game, int i, int j);
+int		ft_if_enemy(t_data **game, int x, int y);
 
 #endif

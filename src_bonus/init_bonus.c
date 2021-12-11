@@ -34,11 +34,17 @@ t_data	*ft_init_struct(t_data *game)
 	game->empty_space = NULL;
 	game->exit_closed = NULL;
 	game->exit_open = NULL;
+	game->enemy = NULL;
+	game->game_over = NULL;
+	game->game_win = NULL;
 	game->assets = "01CPE\0";
 	game->height = 0;
 	game->width = 0;
 	game->x_player = 0;
 	game->y_player = 0;
+	game->x_enemy = 0;
+	game->y_enemy = 0;
+	game->enem_c = 0;
 	game->flag_player = 0;
 	game->flag_right_left = 1;
 	game->num_of_collectibles = 0;

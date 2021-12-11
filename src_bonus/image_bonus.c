@@ -40,6 +40,9 @@ void	ft_xpm_to_image_bonus(t_data **game)
 	(*game)->empty_space = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/grass.xpm", &img_width, &img_height);
 	(*game)->exit_closed = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/exit_c.xpm", &img_width, &img_height);
 	(*game)->exit_open = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/exit_o.xpm", &img_width, &img_height);
+	(*game)->game_over = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/game_over.xpm", &img_width, &img_height);
+	(*game)->game_win = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/game_win.xpm", &img_width, &img_height);
+	(*game)->enemy = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/mushroom.xpm", &img_width, &img_height);
 }
 
 void	ft_xpm_to_player(t_data **game)

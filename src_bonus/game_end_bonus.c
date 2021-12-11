@@ -30,16 +30,19 @@ int	ft_game_end(t_data **game)
 	{
 		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
 		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "You win!");
+//		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->game_win, i, j);
 	}
-//	else if ((*game)->end == 1) // при столкновении с врагом
-//	{
-//		ft_draw_map(game);
-//		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "Game over.");
-//	}
-//	else if ((*game)->end == 2) // игра окончена - в основной части проиграть невозможно
-//	{
-//		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
-//		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "Game over.");
-//	}
+	else if ((*game)->end == 1) // при столкновении с врагом
+	{
+		ft_draw_map(game);
+		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "Game over.");
+//		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->game_over, i, j);
+	}
+	else if ((*game)->end == 2) // игра окончена - в основной части проиграть невозможно
+	{
+		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
+		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "Game over.");
+//		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->game_over, i, j);
+	}
 	return (0);
 }
