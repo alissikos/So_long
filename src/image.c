@@ -29,8 +29,8 @@ void	ft_xpm_to_image(t_data **game)
 //	(*game)->player_right = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/00_r.xpm", &img_width, &img_height);
 	(*game)->collectible = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/watermelon1.xpm", &img_width, &img_height);
 	(*game)->empty_space = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/background1.xpm", &img_width, &img_height);
-	(*game)->exit_closed = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/exit_c.xpm", &img_width, &img_height);
-	(*game)->exit_open = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/exit_o.xpm", &img_width, &img_height);
+	(*game)->exit_closed = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/exit_c1.xpm", &img_width, &img_height);
+	(*game)->exit_open = mlx_xpm_file_to_image((*game)->mlx_ptr, "./assets/exit_o1.xpm", &img_width, &img_height);
 }
 
 void ft_image_to_window(t_data **game, char ch, int i, int j)
@@ -59,10 +59,10 @@ void	ft_draw_map(t_data **game)
 	char	ch;
 
 	line = 0;
-	while (line < (*game)->height * PIC_SIZE) // pic_side - можно написать сторону квадрата картинки
+	while (line < (*game)->height * PIC_SIZE)
 	{
 		columns = 0;
-		while (columns < (*game)->width * PIC_SIZE) // в карте, например, 7*7 и размер картинки 100*100, тогда окно 700*700
+		while (columns < (*game)->width * PIC_SIZE)
 		{
 			ch = (*game)->array[line / PIC_SIZE][columns / PIC_SIZE]; //
 			ft_image_to_window(game, ch, columns, line);

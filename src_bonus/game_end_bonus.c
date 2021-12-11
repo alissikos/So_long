@@ -25,7 +25,7 @@ int	ft_game_end(t_data **game)
 	int	j;
 
 	i = (*game)->width / 2 * PIC_SIZE;
-	j = (*game)->width / 2 * PIC_SIZE;
+	j = (*game)->height / 2 * PIC_SIZE;
 	if ((*game)->out > 0 && !(*game)->end)
 	{
 		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
@@ -34,7 +34,9 @@ int	ft_game_end(t_data **game)
 	}
 	else if ((*game)->end == 1) // при столкновении с врагом
 	{
-		ft_draw_map(game);
+		printf("!!!\n");
+//		ft_draw_map(game);
+		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
 		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, 0xFE5C9D, "Game over.");
 //		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->game_over, i, j);
 	}

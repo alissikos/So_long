@@ -123,13 +123,13 @@ int		if_win(t_data **game, int x, int y);
 int 	ft_key_hook(int key, t_data *game);
 void	ft_escape(t_data **game);
 int		ft_key(int key, t_data **game);
-void	ft_key_actions(t_data **game);
+void	ft_key_actions_bonus(t_data **game);
 void 	ft_change_img(t_data **game, int i, int j);
 
 //game_utils.c
 void	ft_count_collectibles(t_data **game);
 void	ft_get_p_position(t_data **game);
-void	ft_game(t_data **game);
+void	ft_game_bonus(t_data **game);
 
 //clean.c
 void	ft_clean_array(t_data *game);

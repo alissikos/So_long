@@ -44,6 +44,11 @@ void	ft_check_score(t_data **game, int x, int y)
 		(*game)->num_of_collectibles -= 1; // сделать тут смену картинки (отд ф-я с делением на 4 или ифами)
 		(*game)->b_flag += 1;
 	}
+	if (get_map_char(game, x, y) == 'M')
+	{
+		(*game)->end = 1;
+		ft_game_end(game);
+	}
 	(*game)->step += 1;
 //	if ((*game)->b_flag == 1)
 //

@@ -25,7 +25,7 @@ int	main(int argc, char **argv)
 		ft_init_struct(game);
 		if (!ft_reading_map(argv[1], &game))
 			ft_error(9);
-		ft_game(&game);
+		ft_game_bonus(&game);
 		if (game)
 			ft_clean_struct(game);
 	}

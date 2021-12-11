@@ -36,5 +36,7 @@ void	ft_error(int check)
 		printf("Error: %s\n", "File reading error.");
 	else if (check == 10)
 		printf("Error: %s\n", "There must be 2 arguments (program name and map file name).");
+	else if (check == 11)
+		printf("Error: %s\n", "\"The map must contain only '01CEPM' characters.");
 	exit(EXIT_FAILURE);
 }

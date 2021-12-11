@@ -62,14 +62,14 @@ void	ft_get_p_position(t_data **game)
 		ft_error(6);
 }
 
-void	ft_game(t_data **game)
+void	ft_game_bonus(t_data **game)
 {
 	ft_count_collectibles(game); // подсчет коллектиблс
 	ft_get_p_position(game); // проверка плейера
 	ft_init_window(game);
 	ft_xpm_to_image_bonus(game);
-	ft_set_enemy(game);
+//	ft_set_enemy(game);
 	ft_draw_map(game);// переписать
-	ft_key_actions(game);
+	ft_key_actions_bonus(game);
 	mlx_loop((*game)->mlx_ptr);
 }

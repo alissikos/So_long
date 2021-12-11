@@ -14,7 +14,7 @@
 
 static int	ft_chars(int ch)
 {
-	if (ch == 48 || ch == 49 || ch == 67 || ch == 69 || ch == 80)
+	if (ch == 48 || ch == 49 || ch == 67 || ch == 69 || ch == 80 || ch == 77)
 		return (1);
 	else
 		return (0);
@@ -30,7 +30,7 @@ static void	ft_line_check(char *line)
 	while (index < len)
 	{
 		if (ft_chars(line[index]) == 0) // проверить эту строчку, думаю, что нужно переписать на чар
-			ft_error(4); // проверить код ошибки
+			ft_error(11); // проверить код ошибки
 		index++;
 	}
 }

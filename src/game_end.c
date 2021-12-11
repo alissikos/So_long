@@ -25,7 +25,7 @@ int	ft_game_end(t_data **game)
 	int	j;
 
 	i = (*game)->width / 2 * PIC_SIZE;
-	j = (*game)->width / 2 * PIC_SIZE;
+	j = (*game)->height / 2 * PIC_SIZE;
 	if ((*game)->out > 0 && !(*game)->end)
 	{
 		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);

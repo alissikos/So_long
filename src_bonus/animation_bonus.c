@@ -14,13 +14,13 @@
 
 int ft_key_hook(int key, t_data *game)
 {
-	char *str;
+//	char *str;
 	
-	str = ft_itoa(game->step);
+//	str = ft_itoa(game->step);
 	if ((key == 13 || key == 126 || key == 1 || key == 125 || key == 0 || key == 123 || key == 2 || key == 124) && !game->out && !game->end)
-		mlx_string_put (game->mlx_ptr, game->win_ptr, 10, 20, 0xFE5C9D, str);
-	if (str)
-		free (str);
+		mlx_string_put (game->mlx_ptr, game->win_ptr, 50, 70, 0xFE5C9D, ft_itoa(game->step));
+//	if (str)
+//		free (str);
 	return (0);
 }
 
@@ -51,13 +51,14 @@ int	ft_key(int key, t_data **game)
 		ft_escape(game);
 	if (!(*game)->end)
 		ft_draw_map(game);
+	ft_key_hook(key, (*game));
 	return (0);
 }
 
-void	ft_key_actions(t_data **game)
+void	ft_key_actions_bonus(t_data **game)
 {
+//	mlx_key_hook((*game)->win_ptr, ft_key_hook, game);
 	mlx_hook((*game)->win_ptr, 2, 0, ft_key, game);
-	mlx_key_hook((*game)->win_ptr, ft_key_hook, game);
 	mlx_loop_hook((*game)->mlx_ptr, ft_game_end, game);
 	mlx_hook((*game)->win_ptr, 17, 0, ft_close, game);
 }

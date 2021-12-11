@@ -29,8 +29,8 @@ static void	ft_line_check(char *line)
 	len = ft_strlen(line);
 	while (index < len)
 	{
-		if (ft_chars(line[index]) == 0) // проверить эту строчку, думаю, что нужно переписать на чар
-			ft_error(4); // проверить код ошибки
+		if (ft_chars(line[index]) == 0)
+			ft_error(11);
 		index++;
 	}
 }
