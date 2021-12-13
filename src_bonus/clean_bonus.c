@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   clean_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aheidy <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 15:47:20 by aheidy            #+#    #+#             */
-/*   Updated: 2021/11/10 15:47:22 by aheidy           ###   ########.fr       */
+/*   Updated: 2021/12/11 22:37:31 by aheidy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_clean_array(t_data *game)
 	{
 		if (game->array[i])
 		{
-			free(game->array[i]); // why [i] and not the whole array
+			free(game->array[i]);
 			game->array = NULL;
 		}
 		i--;

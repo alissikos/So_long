@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   libft_b.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aheidy <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 15:47:20 by aheidy            #+#    #+#             */
-/*   Updated: 2021/11/10 15:47:22 by aheidy           ###   ########.fr       */
+/*   Updated: 2021/12/13 19:55:33 by aheidy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static int	length(int nb)
 {
 	int	i;
-	
+
 	i = 0;
 	if (nb < 0)
 		i++;
@@ -29,15 +29,13 @@ static int	length(int nb)
 	return (i);
 }
 
-char	*ft_itoa(int n)
+char	*ft_itoa_b(int n, char *str)
 {
-	char	*str;
 	int		i;
 	int		minus;
-	
+
 	minus = 1;
 	i = length(n);
-	str = (char *)malloc(sizeof(char) * (i + 1));
 	if (str == NULL)
 		return (NULL);
 	str[i--] = '\0';

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   actions.c                                          :+:      :+:    :+:   */
+/*   actions_bonus.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aheidy <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/04 16:21:07 by aheidy            #+#    #+#             */
-/*   Updated: 2021/12/04 16:21:26 by aheidy           ###   ########.fr       */
+/*   Updated: 2021/12/11 22:33:57 by aheidy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,8 @@ void	ft_move_up(t_data **game)
 			ft_change_map(game, '0', x, y);
 			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
 			(*game)->steps++;
-//			printf("Step:%d\n", (*game)->steps++);
 		}
 	}
-//	printf("Step:%d\n", (*game)->steps++); // написать везде + сравнивать прев степ со степом, только прир азнице печатать (в бонусах не нужно)
-//	ft_draw_map(game);
 }
 
 void	ft_move_down(t_data **game)
@@ -44,7 +41,7 @@ void	ft_move_down(t_data **game)
 
 	x = (*game)->x_player;
 	y = (*game)->y_player;
-	if (!(*game)->out) // если нельзя  выйти
+	if (!(*game)->out)
 	{
 		(*game)->prev_step = (*game)->step;
 		if (if_can_move(game, x, y + 1))
@@ -55,10 +52,8 @@ void	ft_move_down(t_data **game)
 			ft_change_map(game, '0', x, y);
 			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
 			(*game)->steps++;
-//			printf("Step:%d\n", (*game)->steps++);
 		}
 	}
-//	ft_draw_map(game);
 }
 
 void	ft_move_left(t_data **game)
@@ -76,15 +71,11 @@ void	ft_move_left(t_data **game)
 			(*game)->out = if_win(game, x - 1, y);
 			ft_check_score(game, x - 1, y);
 			(*game)->x_player -= 1;
-//			(*game)->flag_player = 0;
 			ft_change_map(game, '0', x, y);
 			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
 			(*game)->steps++;
-//			(*game)->flag_right_left = 2;
-//			printf("Step:%d\n", (*game)->steps++);
 		}
 	}
-//	ft_draw_map(game);
 }
 
 void	ft_move_right(t_data **game)
@@ -102,13 +93,9 @@ void	ft_move_right(t_data **game)
 			(*game)->out = if_win(game, x + 1, y);
 			ft_check_score(game, x + 1, y);
 			(*game)->x_player += 1;
-//			(*game)->flag_player = 1;
 			ft_change_map(game, '0', x, y);
 			ft_change_map(game, 'P', (*game)->x_player, (*game)->y_player);
 			(*game)->steps++;
-//			(*game)->flag_right_left = 1;
-//			printf("Step:%d\n", (*game)->steps++);
 		}
 	}
-//	ft_draw_map(game);
 }

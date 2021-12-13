@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   init.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aheidy <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 15:47:20 by aheidy            #+#    #+#             */
-/*   Updated: 2021/11/10 15:47:22 by aheidy           ###   ########.fr       */
+/*   Updated: 2021/12/11 22:30:05 by aheidy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ t_data	*ft_init_struct(t_data *game)
 	game->flag_player = 0;
 	game->num_of_collectibles = 0;
 	game->score = 0;
-	game->step = 0; // check if it's just counting checks or for game over
+	game->step = 0;
 	game->steps = 0;
 	game->prev_step = 0;
 	game->out = 0;

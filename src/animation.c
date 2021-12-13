@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   animation.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aheidy <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 15:47:20 by aheidy            #+#    #+#             */
-/*   Updated: 2021/11/10 15:47:22 by aheidy           ###   ########.fr       */
+/*   Updated: 2021/12/11 22:26:28 by aheidy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ int	ft_key(int key, t_data **game)
 
 void	ft_key_actions(t_data **game)
 {
-//	mlx_hook((*game)->win_ptr, 2, 0, ft_key, game);
 	mlx_key_hook((*game)->win_ptr, ft_key, game);
 	mlx_loop_hook((*game)->mlx_ptr, ft_game_end, game);
 	mlx_hook((*game)->win_ptr, 17, 0, ft_close, game);

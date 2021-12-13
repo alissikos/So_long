@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   init_bonus.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aheidy <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 15:47:20 by aheidy            #+#    #+#             */
-/*   Updated: 2021/11/10 15:47:22 by aheidy           ###   ########.fr       */
+/*   Updated: 2021/12/13 22:30:26 by aheidy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,17 @@ t_data	*ft_init_struct(t_data *game)
 	game->pl05_l = NULL;
 	game->collectible = NULL;
 	game->empty_space = NULL;
+	ft_init_struct_2(game);
+	return (game);
+}
+
+t_data	*ft_init_struct_2(t_data *game)
+{
 	game->exit_closed = NULL;
 	game->exit_open = NULL;
 	game->enemy = NULL;
 	game->game_over = NULL;
 	game->game_win = NULL;
-	game->assets = "01CPE\0";
 	game->height = 0;
 	game->width = 0;
 	game->x_player = 0;
@@ -45,16 +50,13 @@ t_data	*ft_init_struct(t_data *game)
 	game->x_enemy = 0;
 	game->y_enemy = 0;
 	game->enem_c = 0;
-	game->flag_player = 0;
 	game->flag_right_left = 1;
 	game->num_of_collectibles = 0;
 	game->score = 0;
-	game->step = 0; // check if it's just counting checks or for game over
-	game->steps = 0;
+	game->step = 0;
 	game->prev_step = 0;
 	game->out = 0;
 	game->end = 0;
-	game->counter = 0;
 	game->b_flag = 0;
 	return (game);
 }

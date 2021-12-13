@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   animation_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aheidy <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 15:47:20 by aheidy            #+#    #+#             */
-/*   Updated: 2021/11/10 15:47:22 by aheidy           ###   ########.fr       */
+/*   Updated: 2021/12/13 22:31:34 by aheidy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../hdr/so_long_bonus.h"
 
-int ft_key_hook(int key, t_data *game)
+int	ft_key_hook(int key, t_data *game)
 {
-//	char *str;
-	
-//	str = ft_itoa(game->step);
-	if ((key == 13 || key == 126 || key == 1 || key == 125 || key == 0 || key == 123 || key == 2 || key == 124) && !game->out && !game->end)
-		mlx_string_put (game->mlx_ptr, game->win_ptr, 50, 70, 0xFE5C9D, ft_itoa(game->step));
-//	if (str)
-//		free (str);
+	char	str[100];
+
+	if ((key == 13 || key == 126 || key == 1 || key == 125 || key == 0 \
+		|| key == 123 || key == 2 || key == 124) && !game->out && !game->end)
+		mlx_string_put (game->mlx_ptr, game->win_ptr, 50, 70, 0xFE5C9D, \
+				ft_itoa_b(game->step, str));
 	return (0);
 }
 
@@ -47,46 +46,17 @@ int	ft_key(int key, t_data **game)
 		(*game)->flag_right_left = 1;
 		ft_move_right(game);
 	}
-	if (key == 53)
-		ft_escape(game);
 	if (!(*game)->end)
 		ft_draw_map(game);
+	if (key == 53)
+		ft_escape(game);
 	ft_key_hook(key, (*game));
 	return (0);
 }
 
 void	ft_key_actions_bonus(t_data **game)
 {
-//	mlx_key_hook((*game)->win_ptr, ft_key_hook, game);
 	mlx_hook((*game)->win_ptr, 2, 0, ft_key, game);
 	mlx_loop_hook((*game)->mlx_ptr, ft_game_end, game);
 	mlx_hook((*game)->win_ptr, 17, 0, ft_close, game);
-}
-
-void 	ft_change_img(t_data **game, int i, int j)
-{
-	if ((*game)->b_flag == 0 && (*game)->flag_right_left == 1)
-		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl00, i, j);
-	if ((*game)->b_flag == 1 && (*game)->flag_right_left == 1)
-		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl01, i, j);
-	if ((*game)->b_flag == 2 && (*game)->flag_right_left == 1)
-		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl02, i, j);
-	if ((*game)->b_flag == 3 && (*game)->flag_right_left == 1)
-		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl03, i, j);
-	if ((*game)->b_flag == 4 && (*game)->flag_right_left == 1)
-		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl04, i, j);
-	if ((*game)->b_flag >= 5 && (*game)->flag_right_left == 1)
-		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl05, i, j);
-	if ((*game)->b_flag == 0 && (*game)->flag_right_left == 2)
-		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl00_l, i, j);
-	if ((*game)->b_flag == 1 && (*game)->flag_right_left == 2)
-		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl01_l, i, j);
-	if ((*game)->b_flag == 2 && (*game)->flag_right_left == 2)
-		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl02_l, i, j);
-	if ((*game)->b_flag == 3 && (*game)->flag_right_left == 2)
-		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl03_l, i, j);
-	if ((*game)->b_flag == 4 && (*game)->flag_right_left == 2)
-		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl04_l, i, j);
-	if ((*game)->b_flag >= 5 && (*game)->flag_right_left == 2)
-		mlx_put_image_to_window((*game)->mlx_ptr, (*game)->win_ptr, (*game)->pl05_l, i, j);
 }

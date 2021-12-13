@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   error.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aheidy <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 15:47:20 by aheidy            #+#    #+#             */
-/*   Updated: 2021/11/10 15:47:22 by aheidy           ###   ########.fr       */
+/*   Updated: 2021/12/13 19:59:22 by aheidy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,8 @@ void	ft_error(int check)
 	else if (check == 9)
 		printf("Error: %s\n", "File reading error.");
 	else if (check == 10)
-		printf("Error: %s\n", "There must be 2 arguments (program name and map file name).");
+		printf("Error: %s\n", "There must be 2 arguments (program name and map \
+			file name).");
 	else if (check == 11)
 		printf("Error: %s\n", "\"The map must contain only '01CEP' characters.");
 	exit(EXIT_FAILURE);

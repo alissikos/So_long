@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   so_long.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aheidy <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 15:47:20 by aheidy            #+#    #+#             */
-/*   Updated: 2021/11/10 15:47:22 by aheidy           ###   ########.fr       */
+/*   Updated: 2021/12/13 22:33:31 by aheidy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,11 +49,6 @@ typedef struct s_data
 	int		counter;
 }			t_data;
 
-//char	*check_rest(char *rest, char **line);
-//int		check_lesen(int lesen, char **buf, char **line);
-//int		get_rest_and_line(char **n_point, char **buf, char **rest, char **line);
-//int		get_return(char **buf, int lesen, char **rest, char **line);
-
 // gnl and libft
 int		get_next_line(char **line, int fd);
 int		ft_strlen(const char *str);
@@ -72,14 +67,14 @@ void	ft_map_name(char *file);
 void	ft_check_data(char *file);
 
 //map_checks2.c
-void			ft_map_chars_check(char *file);
-void			ft_wall_check(t_data *game);
+void	ft_map_chars_check(char *file);
+void	ft_wall_check(t_data *game);
 
 //error.c
 void	ft_error(int check);
 
 //map.c
-int	ft_reading_map(char *file, t_data **game);
+int		ft_reading_map(char *file, t_data **game);
 
 //image.c
 void	ft_init_window(t_data **game);

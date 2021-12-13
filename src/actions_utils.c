@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   actions_utils.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aheidy <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 15:47:20 by aheidy            #+#    #+#             */
-/*   Updated: 2021/11/10 15:47:22 by aheidy           ###   ########.fr       */
+/*   Updated: 2021/12/11 22:26:10 by aheidy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,12 +40,8 @@ void	ft_change_map(t_data **game, char ch, int x, int y)
 void	ft_check_score(t_data **game, int x, int y)
 {
 	if (get_map_char(game, x, y) == 'C')
-		(*game)->num_of_collectibles -= 1; // сделать тут смену картинки (отд ф-я с делением на 4 или ифами)
+		(*game)->num_of_collectibles -= 1;
 	(*game)->step += 1;
-//	if ((*game)->num_of_collectibles == 0) // это кажется для макса шагов
-//		(*game)->score += 1;
-//	if ((*game)->out)  // переписать, было для макс счета
-//		(*game)->end = 2;
 }
 
 int	if_win(t_data **game, int x, int y)

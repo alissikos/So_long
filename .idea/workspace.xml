@@ -13,78 +13,51 @@
   <component name="ChangeListManager">
     <list default="true" id="bf5cc0c8-05ae-4a2c-a64b-91058afaddde" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/as/exit_c.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/as/exit_o.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/00.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/00.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/00_l.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/00_l.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/01.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/01_l.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01_l.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/02.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02_l.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/02_l.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/03.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/03.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/03_l.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/03_l.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/04.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/04.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/04_l.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/04_l.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/05.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/05.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/05_l.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/assets/05_l.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-54e15819dfe6a7fa9f13.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2021-12-11T14-21-46-0716.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-s-Debug-3e287263779fc2186346.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/actions_bonus.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/actions_bonus.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/actions_utils_bonus.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/actions_utils_bonus.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/animation_bonus.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/animation_bonus.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/clean_bonus.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/clean_bonus.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/error_bonus.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/error_bonus.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/game_end_bonus.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/game_end_bonus.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/game_utils_bonus.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/game_utils_bonus.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/image_bonus.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/image_bonus.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/init_bonus.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/init_bonus.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/map_bonus.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/map_bonus.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/map_checks2_bonus.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/map_checks2_bonus.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/so_long_bonus.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/s.dir/src_bonus/so_long_bonus.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/s" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hdr/so_long_bonus.h" beforeDir="false" afterPath="$PROJECT_DIR$/hdr/so_long_bonus.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.ber" beforeDir="false" afterPath="$PROJECT_DIR$/map.ber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/actions.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/actions.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/error.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/error.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/actions_utils.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/actions_utils.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/animation.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/animation.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/game_end.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/game_end.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/image.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/image.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/map_checks2.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/map_checks2.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/map.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj/map.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj_bonus/actions_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/actions_bonus.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj_bonus/actions_utils_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/actions_utils_bonus.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj_bonus/animation_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/animation_bonus.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj_bonus/enemy.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/enemy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj_bonus/error_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/error_bonus.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj_bonus/game_end_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/game_end_bonus.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj_bonus/game_utils_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/game_utils_bonus.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj_bonus/image_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/image_bonus.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj_bonus/map_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/map_bonus.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj_bonus/map_checks2_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/map_checks2_bonus.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj_bonus/so_long_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/so_long_bonus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj_bonus/init_bonus.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/init_bonus.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj_bonus/libft_b.o" beforeDir="false" afterPath="$PROJECT_DIR$/obj_bonus/libft_b.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/so_long" beforeDir="false" afterPath="$PROJECT_DIR$/so_long" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/so_long_bonus" beforeDir="false" afterPath="$PROJECT_DIR$/so_long_bonus" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions_utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animation.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/animation.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clean.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/clean.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/error.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/error.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game_end.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_end.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_next_line.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/image.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/image.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map_checks2.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/map_checks2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/so_long.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/so_long.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/init.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/libft.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/libft.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/map.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map_checks.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/map_checks.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_bonus/actions_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/actions_bonus.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_bonus/actions_utils_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/actions_utils_bonus.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_bonus/animation_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/animation_bonus.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_bonus/enemy.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/enemy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_bonus/error_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/error_bonus.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_bonus/clean_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/clean_bonus.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_bonus/enemy.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src_bonus/game_end_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/game_end_bonus.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_bonus/game_utils_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/game_utils_bonus.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_bonus/get_next_line_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/get_next_line_bonus.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_bonus/image_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/image_bonus.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_bonus/map_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/map_bonus.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_bonus/init_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/init_bonus.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_bonus/libft_b.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/libft_b.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_bonus/libft_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/libft_bonus.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_bonus/map_checks2_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/map_checks2_bonus.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_bonus/so_long_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/so_long_bonus.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_bonus/map_checks_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/src_bonus/map_checks_bonus.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,11 +102,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="s" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="p.ber" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="s" TARGET_NAME="s" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="s" RUN_TARGET_NAME="s">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -152,7 +120,8 @@
       <workItem from="1639139908700" duration="1831000" />
       <workItem from="1639145154281" duration="2885000" />
       <workItem from="1639232499470" duration="2875000" />
-      <workItem from="1639243650744" duration="5850000" />
+      <workItem from="1639243650744" duration="7306000" />
+      <workItem from="1639411813110" duration="773000" />
     </task>
     <servers />
   </component>

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   so_long_bonus.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aheidy <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 15:47:20 by aheidy            #+#    #+#             */
-/*   Updated: 2021/11/10 15:47:22 by aheidy           ###   ########.fr       */
+/*   Updated: 2021/12/13 20:13:17 by aheidy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ typedef struct s_data
 	int		y_enemy;
 	int		enem_c;
 	int		flag_player;
-	int 	flag_right_left;
+	int		flag_right_left;
 	int		num_of_collectibles;
 	int		score;
 	char	*assets;
@@ -76,10 +76,11 @@ int		ft_strncmp(const char *str1, const char *str2, size_t n);
 char	*ft_strdup(const char *str);
 
 //libft_b.c
-char	*ft_itoa(int n);
+char	*ft_itoa_b(int n, char *str);
 
 //init.c
 t_data	*ft_init_struct(t_data *game);
+t_data	*ft_init_struct_2(t_data *game);
 void	ft_init_array(char *file, t_data **game);
 
 //map_checks.c
@@ -90,14 +91,14 @@ void	ft_map_name(char *file);
 void	ft_check_data(char *file);
 
 //map_checks2.c
-void			ft_map_chars_check(char *file);
-void			ft_wall_check(t_data *game);
+void	ft_map_chars_check(char *file);
+void	ft_wall_check(t_data *game);
 
 //error.c
 void	ft_error(int check);
 
 //map.c
-int	ft_reading_map(char *file, t_data **game);
+int		ft_reading_map(char *file, t_data **game);
 
 //image_bonus.c
 void	ft_init_window(t_data **game);
@@ -120,11 +121,14 @@ void	ft_check_score(t_data **game, int x, int y);
 int		if_win(t_data **game, int x, int y);
 
 //animation.c
-int 	ft_key_hook(int key, t_data *game);
+int		ft_key_hook(int key, t_data *game);
 void	ft_escape(t_data **game);
 int		ft_key(int key, t_data **game);
 void	ft_key_actions_bonus(t_data **game);
-void 	ft_change_img(t_data **game, int i, int j);
+
+//change_b.c
+void	ft_change_img(t_data **game, int i, int j);
+void	ft_change_img2(t_data **game, int i, int j);
 
 //game_utils.c
 void	ft_count_collectibles(t_data **game);

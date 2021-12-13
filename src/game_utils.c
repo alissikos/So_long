@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   game_utils.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aheidy <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 15:47:20 by aheidy            #+#    #+#             */
-/*   Updated: 2021/11/10 15:47:22 by aheidy           ###   ########.fr       */
+/*   Updated: 2021/12/11 22:27:39 by aheidy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,11 +64,11 @@ void	ft_get_p_position(t_data **game)
 
 void	ft_game(t_data **game)
 {
-	ft_count_collectibles(game); // подсчет коллектиблс
-	ft_get_p_position(game); // проверка плейера
+	ft_count_collectibles(game);
+	ft_get_p_position(game);
 	ft_init_window(game);
 	ft_xpm_to_image(game);
-	ft_draw_map(game);// переписать
+	ft_draw_map(game);
 	ft_key_actions(game);
 	mlx_loop((*game)->mlx_ptr);
 }
