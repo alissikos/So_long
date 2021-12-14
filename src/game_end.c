@@ -31,6 +31,7 @@ int	ft_game_end(t_data **game)
 		mlx_clear_window((*game)->mlx_ptr, (*game)->win_ptr);
 		mlx_string_put((*game)->mlx_ptr, (*game)->win_ptr, i, j, \
 			0xFE5C9D, "You win!");
+		(*game)->end = 1;
 	}
 	return (0);
 }
